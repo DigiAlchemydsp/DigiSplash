@@ -1,7 +1,8 @@
 # Digitakt & Digitone splash mods
 
 Boot-splash mods for the Elektron **Digitakt mk1** (OS 1.53) and **Digitone
-mk1 / Digitone Keys** (OS 1.43), built for [elekloader](../elekloader). They
+mk1 / Digitone Keys** (OS 1.43), built for
+[elekloader](https://github.com/irpina/elekloader). They
 change only the main OS section, need the matching `core` mod, and can be
 combined with other non-conflicting mods. No Elektron firmware is included.
 

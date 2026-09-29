@@ -80,8 +80,9 @@ Every mod here needs `core`. `lint` without it prints
 1. reads `mod.json`, checks `device`/`os` against the stock file and the
    stock bytes at every `sites` entry;
 2. assembles/compiles `sources` with the device flags, `ld -r`'s them into
-   one object, and keeps `.run`, `.fast`, `.bss` (see
-   [docs/FORMAT.md](../elekloader/docs/FORMAT.md));
+   one object, and keeps `.run`, `.fast`, `.bss` (see elekloader's
+   `docs/FORMAT.md`, at
+   [github.com/irpina/elekloader](https://github.com/irpina/elekloader));
 3. stores runs of your bytes that also occur in the firmware as *references*
    to the user's own image, never as shipped bytes;
 4. relocates it and validates the result with the linker.

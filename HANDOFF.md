@@ -5,7 +5,7 @@ hand-written splash mods each side, plus a generator, docs and screenshots.
 
 - Remote: <https://github.com/DigiAlchemydsp/DigiSplash> (public, `main`)
 - Local: `C:\Users\benan\Music\ELEKTRON\digitakt-splash-mods`
-- Built for [elekloader](../../elekloader) (elekloader's own checkout is at
+- Built for [elekloader](https://github.com/irpina/elekloader) (its own checkout is at
   `C:\Users\benan\Music\ELEKTRON\elekloader`).
 
 ## Repo map
