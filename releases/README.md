@@ -7,6 +7,10 @@ device variants:
 - `dn/` — Digitone mk1 / Keys, OS 1.43 (needs `core-dn1`, e.g.
   `core-dn1-2.0a.elemod`)
 
+Each device is also packaged as a zip with the elemods **and** the sources of
+every mod: `DigiSplash-1.0-digitakt-mk1.zip` and
+`DigiSplash-1.0-digitone-mk1.zip` (`elemods/` + `sources/` + README + LICENSE).
+
 | mod | what |
 |---|---|
 | `custom-splash` | draws your own image (replace `splash.bin` and rebuild; here it is the demo) |
