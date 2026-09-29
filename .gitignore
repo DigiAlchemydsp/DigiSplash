@@ -1,5 +1,5 @@
 # build outputs
-mods/*/out/
+**/out/
 *.work/
 __pycache__/
 *.pyc
@@ -14,6 +14,7 @@ __pycache__/
 *.snap
 *.bin
 !mods/custom-splash/splash.bin
+!digitone1/mods/custom-splash/splash.bin
 section_*.bin
 main_os.bin
 plusdrive.img

@@ -1,12 +1,14 @@
-# Digitakt mk1 splash mods
+# Digitakt & Digitone splash mods
 
-Boot-splash mods for the Elektron **Digitakt mk1** (OS 1.53), built for
-[elekloader](../elekloader). They change only the main OS section, need the
-`core` mod, and can be combined with other non-conflicting mods. No Elektron
-firmware is included.
+Boot-splash mods for the Elektron **Digitakt mk1** (OS 1.53) and **Digitone
+mk1 / Digitone Keys** (OS 1.43), built for [elekloader](../elekloader). They
+change only the main OS section, need the matching `core` mod, and can be
+combined with other non-conflicting mods. No Elektron firmware is included.
 
 ![DigiTussy](screenshots/digitussy.gif)
 ![DigiTrash](screenshots/digitrash.gif)
+
+## Digitakt mk1 (OS 1.53)
 
 | mod | what it does | sources |
 |---|---|---|
@@ -20,29 +22,52 @@ firmware is included.
 *(left: the usual boot animation, ~367 lit pixels — right: the rare one,
 ~666; both captured from a real 1.53 image in digiemu.)*
 
+## Digitone mk1 / Digitone Keys (OS 1.43)
+
+The same four mods, ported (see [`digitone1/`](digitone1) for the addresses).
+The panel is the same screen, so the graphics and image format are identical.
+
+![DigiTussy on the Digitone](screenshots/digitussy-dn1.gif)
+
+| mod | |
+|---|---|
+| [`digitone1/mods/custom-splash`](digitone1/mods/custom-splash) | your own image |
+| [`digitone1/mods/rare-splash`](digitone1/mods/rare-splash) | the alternate stock animation |
+| [`digitone1/mods/digitussy`](digitone1/mods/digitussy) | animated wordmark + particles |
+| [`digitone1/mods/digitrash`](digitone1/mods/digitrash) | animated wordmark + flies |
+
+## Conflicts
+
 `custom-splash`, `digitussy` and `digitrash` draw over the intro; `rare-splash`
 changes which stock animation runs. `digitussy`, `digitrash` and `rare-splash`
-all touch the same instruction, so install **one of them** (they overlap);
-`custom-splash` can go with either.
+overlap, so install **one of them**; `custom-splash` can go with either. The
+same rule holds within each device section (a Digitakt mod and a Digitone mod
+are never combined — they target different OS files).
 
 ## Quick start
 
 ```sh
-# 1. build the .elemods (needs elekloader and the m68k toolchain; see docs/BUILDING.md)
 cd elekloader
-python -m elekloader.sdk.build ../digitakt-splash-mods/mods/digitussy --stock Digitakt_OS1.53.syx
 
-# 2. build a flashable firmware with core and the mod (see docs/INSTALLING.md)
+# Digitakt mk1: build a mod, then a flashable firmware with core
+python -m elekloader.sdk.build ../digitakt-splash-mods/mods/digitussy --stock Digitakt_OS1.53.syx
 python -m elekloader.patch --stock Digitakt_OS1.53.syx \
     --mod mods/core/out/core-2.1.elemod \
     --mod ../digitakt-splash-mods/mods/digitussy/out/digitussy-1.0.elemod \
     --out digitussy.syx --version 2.0s
+
+# Digitone mk1 / Keys: the same, with the Digitone stock and core-dn1
+python -m elekloader.sdk.build ../digitakt-splash-mods/digitone1/mods/digitussy \
+    --stock Digitone_and_Digitone_Keys_OS1.43.syx
+python -m elekloader.patch --stock Digitone_and_Digitone_Keys_OS1.43.syx \
+    --mod mods/core-dn1/out/core-dn1-2.0a.elemod \
+    --mod ../digitakt-splash-mods/digitone1/mods/digitussy/out/digitussy-1.0.elemod \
+    --out digitussy-dn1.syx --version 2.0s
 ```
 
-`digitussy` and `digitrash` need the m68k toolchain (they have C sources).
-`rare-splash` and `custom-splash`'s site work needs it too, because
-`custom-splash` has assembly; **only `rare-splash` builds without a toolchain**
-(it has no sources).
+`digitussy` and `digitrash` need the m68k toolchain (they have C sources);
+so does `custom-splash` (assembly). **Only `rare-splash` builds without a
+toolchain** (it has no sources).
 
 ## Documentation
 
@@ -52,20 +77,21 @@ python -m elekloader.patch --stock Digitakt_OS1.53.syx \
 | [docs/INSTALLING.md](docs/INSTALLING.md) | `elekloader.patch`, flashing, recovery, which mods conflict |
 | [docs/PANEL-FORMAT.md](docs/PANEL-FORMAT.md) | the 128x64 1bpp panel layout and how to make art for it |
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | how the intro selects and presents, and where each mod hooks |
+| [digitone1/README.md](digitone1/README.md) | the Digitone addresses and build/install commands |
 | [NOTICE.md](NOTICE.md) | licence and the independence statement |
 
 ## Layout
 
 ```
-mods/<id>/mod.json     the mod (elekloader format 2)
-mods/<id>/*.s,*.c      sources
-mods/<id>/out/         build output (gitignored)
-screenshots/           captured in digiemu
-docs/                  the guides above
+mods/<id>/                Digitakt mk1 mods (elekloader format 2)
+digitone1/mods/<id>/      Digitone mk1 / Keys mods
+mods/<id>/*.s,*.c         sources;  out/ is build output (gitignored)
+screenshots/              captured in digiemu
+docs/                     the guides above
 ```
 
 ## Licence
 
-The mods are GPL-2.0-or-later (see [LICENSE](LICENSE)). Digitakt and Elektron
-are trademarks of their respective owners; this project is independent and is
-not affiliated with or endorsed by Elektron.
+The mods are GPL-2.0-or-later (see [LICENSE](LICENSE)). Digitakt, Digitone and
+Elektron are trademarks of their respective owners; this project is
+independent and is not affiliated with or endorsed by Elektron.

@@ -69,3 +69,11 @@ splash mod keeps every other screen identical and only changes the intro, so
 it passes a screen comparison as long as the UI still comes up — which it does
 for all four mods. The captures in [`../screenshots`](../screenshots) are from
 that emulator.
+
+## Digitone mk1 / Digitone Keys (OS 1.43)
+
+The same commands work against the Digitone stock and its core; substitute
+`Digitone_and_Digitone_Keys_OS1.43.syx` for the stock file and
+`mods/core-dn1/out/core-dn1-2.0a.elemod` (or your core-dn1 build) for `core`,
+and use the mods under `digitone1/mods/`. See
+[../digitone1/README.md](../digitone1/README.md).

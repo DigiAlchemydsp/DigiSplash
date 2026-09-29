@@ -92,3 +92,11 @@ flies). See [PANEL-FORMAT.md](PANEL-FORMAT.md).
 
 All three gate on `0x40000340 == 0x4006c154` (the intro still owning PIT3), so
 nothing is drawn over the user interface.
+
+## Digitone mk1 / Digitone Keys (OS 1.43)
+
+The Digitone intro is the Digitakt's code, relinked: same selector, same
+double-buffered present, same LCG. Only the addresses move, and the intro calls
+the present nine times (five delta, four full) rather than seven. The ported
+mods and a full address table are in [../digitone1/README.md](../digitone1/README.md);
+`core-dn1` is the core mod. The panel and its format are identical.

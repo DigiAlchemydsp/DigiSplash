@@ -1,0 +1,25 @@
+{
+ "id": "digitrash",
+ "version": "1.0",
+ "title": "DigiTrash",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "description": "An animated Digitone boot splash: the DIGITRASH wordmark and a trash can with six flies buzzing and wandering around them. Drawn at the intro's panel presents; inert once the user interface takes over.",
+ "device": "digitone-mk1",
+ "os": "1.43",
+ "sources": ["splash.s", "render.c"],
+ "sites": [
+  {"addr": "0x40090e58", "stock": "4eb9400f8efa", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x40091000", "stock": "4eb9400f8efa", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x4009130a", "stock": "4eb9400f8efa", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x400917bc", "stock": "4eb9400f8efa", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x40091ac0", "stock": "4eb9400f8efa", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x40090ff8", "stock": "4eb9400f8e7c", "op": "jsr", "target": "dtr_flush"},
+  {"addr": "0x40091302", "stock": "4eb9400f8e7c", "op": "jsr", "target": "dtr_flush"},
+  {"addr": "0x400917b4", "stock": "4eb9400f8e7c", "op": "jsr", "target": "dtr_flush"},
+  {"addr": "0x40091ab8", "stock": "4eb9400f8e7c", "op": "jsr", "target": "dtr_flush"}
+ ],
+ "requires": ["core"],
+ "resources": {"names": []}
+}
