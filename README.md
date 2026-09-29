@@ -59,15 +59,9 @@ Install one draw mod at a time — see [releases/README.md](releases/README.md).
 ![digitussy](releases/screenshots/digitussy.gif)
 ![digitrash](releases/screenshots/digitrash.gif)
 ![aba](releases/screenshots/aba-bootanim.gif)
-![beep](releases/screenshots/beep.png)
-![catbooting](releases/screenshots/catbooting.png)
-![catscan](releases/screenshots/catscan.png)
-![discover](releases/screenshots/discover.png)
-![experience](releases/screenshots/experience.png)
-![mount](releases/screenshots/mount.png)
-![pfft](releases/screenshots/pfft.png)
-![planet1](releases/screenshots/planet1.png)
-![loop](releases/screenshots/loop.gif)
+
+The rest (`beep`, `catbooting`, `catscan`, `discover`, `experience`, `mount`,
+`pfft`, `planet1`, `loop`) are shown in [releases/README.md](releases/README.md).
 
 ## Quick start
 

@@ -20,8 +20,22 @@ device variants:
 `catbooting`, `catscan`, `mount`, … are static (one frame); `loop` and the
 `digitussy`/`digitrash`/`aba-bootanim` ones animate.
 
-A rendered screenshot of each is in [`screenshots/`](screenshots) (also shown
-in the main [README](../README.md#releases)).
+A rendered screenshot of each (in [`screenshots/`](screenshots)):
+
+![custom-splash](screenshots/custom-splash.png)
+![rare-splash](screenshots/rare-splash.gif)
+![digitussy](screenshots/digitussy.gif)
+![digitrash](screenshots/digitrash.gif)
+![aba](screenshots/aba-bootanim.gif)
+![beep](screenshots/beep.png)
+![catbooting](screenshots/catbooting.png)
+![catscan](screenshots/catscan.png)
+![discover](screenshots/discover.png)
+![experience](screenshots/experience.png)
+![mount](screenshots/mount.png)
+![pfft](screenshots/pfft.png)
+![planet1](screenshots/planet1.png)
+![loop](screenshots/loop.gif)
 
 ## Install
 
