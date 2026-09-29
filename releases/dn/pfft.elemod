@@ -1,0 +1,370 @@
+{
+ "elemod": 2,
+ "id": "pfft",
+ "version": "1.0",
+ "title": "pfft",
+ "description": "Boot animation generated from pfft.png (1 frame). Drawn over the intro panel while it is live.",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitone-mk1",
+  "product": "Digitone mk1",
+  "os": "1.43",
+  "syx_sha256": "c5a54cc05b921f2e4bd814834c5365c2a5aa01d7772a9a2961fac1c3095bf9aa",
+  "section3_sha256": "3831a477a2a22befb23c42e47e782853da49566ef5d0a1767fcf6c30e6767414",
+  "section3_len": 2732208
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1120,
+   "parts": [
+    [
+     "hex",
+     "610000124ef9400f8efa610000084ef9400f8e7c2039400003400c8040090cdc6638207940241a444a88672e203a002e52800c80000000016602428023c000000000e188e5880680000000002240203c0000010020d9538066fa"
+    ],
+    [
+     "stock",
+     "0x4028c602",
+     50
+    ],
+    [
+     "stock",
+     "0x4022cdcc",
+     8
+    ],
+    [
+     "stock",
+     "0x4022cdcc",
+     12
+    ],
+    [
+     "hex",
+     "0000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x4022cd92",
+     10
+    ],
+    [
+     "hex",
+     "00000000000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x4022cd92",
+     10
+    ],
+    [
+     "hex",
+     "0000"
+    ],
+    [
+     "stock",
+     "0x401920c8",
+     8
+    ],
+    [
+     "hex",
+     "000000f8"
+    ],
+    [
+     "stock",
+     "0x4018cc0c",
+     10
+    ],
+    [
+     "stock",
+     "0x4018d276",
+     12
+    ],
+    [
+     "stock",
+     "0x40229f84",
+     8
+    ],
+    [
+     "hex",
+     "02f8"
+    ],
+    [
+     "stock",
+     "0x4024ff76",
+     12
+    ],
+    [
+     "hex",
+     "fff0001e000001ffffe0003e000007fff000001e"
+    ],
+    [
+     "stock",
+     "0x4022b342",
+     8
+    ],
+    [
+     "stock",
+     "0x40249a90",
+     10
+    ],
+    [
+     "stock",
+     "0x401e0328",
+     8
+    ],
+    [
+     "hex",
+     "803ffff00000000001ffff80"
+    ],
+    [
+     "stock",
+     "0x40256356",
+     8
+    ],
+    [
+     "hex",
+     "010008f07ffff80e011ff87ffff0003d41bff87ffc0000f8c0fff87ff80003f8c0fff87ef0000ff8c06ff878e0007ff8e047f860c001ff78e047f8c08003fe38c047f000000fff188007f000001fff088007f000003ffe000007f000007fff080007800000ffff8c000f000001ffffc4000e000003ffffe0005c000307fffff60078001f0fffffff007000ff0fffffff00e003ff1fffffff83c047ff3ffffffec7e58ffc3ffffffc6fff1ff87ffffffe7ffe3ff0fffffffe3ffe3fe0fffffffe7ffc7fc0fffffffc7ffc7f80fffffffe3ff8ff00fffffff01ff8fe00ffffffc03fbdfc00fffff7807f1ff800ffffe3ce1f8ff000ffffc7ff0fc3f000ffffefff9fe00000f9ffffff0ff00000f0ffffff87fc0000f1ffffffcffe0000b1ffffff87fe000011ffffffc3f80c0000fffffff7f01ffe207ffffffff82fff203ffffffffc47ff203ffffffff0c3fe301fffffffe063f8101ffffffff031f0101ffffffff831e0801ffffffff810e0d81ffffffff818c1f81ffffffffc0803f83ffffffffe0407fc3fffffdfde001ffe7fffff8f8c003effffffffc7d8007cffffffffc38800fcffffffff818801f8ffffffffc08801f8ffffffffe00801f0fffffffff0c001e0fffffffff0c001e0ffffffffe06000c07ffffffff0f000c03ffffffff8f800801ffffffffc7c00008ffffffffe3e2000c7ffffffff1e2000e1ffffffffbf000000ffffffffff8000003ffffffffc00000007"
+    ],
+    [
+     "stock",
+     "0x4025053c",
+     8
+    ],
+    [
+     "hex",
+     "7fffff00000000000fffe000"
+    ],
+    [
+     "stock",
+     "0x40256586",
+     12
+    ],
+    [
+     "stock",
+     "0x4018d79a",
+     8
+    ],
+    [
+     "hex",
+     "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007c"
+    ],
+    [
+     "stock",
+     "0x4022b07a",
+     10
+    ],
+    [
+     "hex",
+     "0000000007fc"
+    ],
+    [
+     "stock",
+     "0x40280032",
+     12
+    ],
+    [
+     "hex",
+     "000386000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ]
+   ]
+  }
+ },
+ "symbols": {
+  "pfft_advance": [
+   ".run",
+   20
+  ],
+  "pfft_idx": [
+   ".run",
+   92
+  ],
+  "pfft_frames": [
+   ".run",
+   96
+  ],
+  "pfft_diff": [
+   ".run",
+   0
+  ],
+  "pfft_flush": [
+   ".run",
+   10
+  ]
+ },
+ "exports": [
+  "pfft_diff",
+  "pfft_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   62,
+   "abs32",
+   "sec:.run",
+   92
+  ],
+  [
+   ".run",
+   72,
+   "abs32",
+   "sec:.run",
+   96
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x40090e58",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091000",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4009130a",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400917bc",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091ac0",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40090ff8",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091302",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400917b4",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091ab8",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:pfft_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "2756321f9e15f05452f4ff9dbfeb2abec3f198ff57b7795b28c3a6657f937a5a"
+  }
+ },
+ "signature": null
+}

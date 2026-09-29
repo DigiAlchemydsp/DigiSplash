@@ -1,0 +1,519 @@
+{
+ "elemod": 2,
+ "id": "custom-splash",
+ "version": "1.0",
+ "title": "Custom splash",
+ "description": "Draws your own 128x64 image as the boot splash. Replace splash.bin with mksplash.py; the mod copies it over each composed intro frame and then runs the stock present. Works alongside any other mod and needs core.",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitakt-mk1",
+  "product": "Digitakt mk1",
+  "os": "1.53",
+  "syx_sha256": "9bdd44bb6102fb25c143cfab97bc92b7a89c463f795d3112dce89771e29bcc92",
+  "section3_sha256": "4b47a9507758ca5669ca02ab2c0374d2c04c98aece445408295cc1dcb265c5df",
+  "section3_len": 2475584
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1088,
+   "parts": [
+    [
+     "hex",
+     "610000124ef9400e60e2610000084ef9400e60642039400003400c804006c154661c20794020d8f84a886712227c00000000203c0000010020d9538066fa"
+    ],
+    [
+     "stock",
+     "0x4017c962",
+     12
+    ],
+    [
+     "hex",
+     "003ffc000000"
+    ],
+    [
+     "stock",
+     "0x4022961e",
+     8
+    ],
+    [
+     "stock",
+     "0x402411ac",
+     10
+    ],
+    [
+     "hex",
+     "01c00380"
+    ],
+    [
+     "stock",
+     "0x401fdb4c",
+     12
+    ],
+    [
+     "hex",
+     "0f8001f0000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e00007000000000010000f00000000001e007800000000000f00f80000000000060"
+    ],
+    [
+     "stock",
+     "0x401fe60c",
+     12
+    ],
+    [
+     "hex",
+     "000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x401ad2c4",
+     8
+    ],
+    [
+     "hex",
+     "fff00000000001fffff00000000001fffff0"
+    ],
+    [
+     "stock",
+     "0x401aa0b2",
+     12
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x40216a78",
+     8
+    ],
+    [
+     "stock",
+     "0x401aa0b6",
+     8
+    ],
+    [
+     "hex",
+     "01fffff00000000001fffff00000000000ff"
+    ],
+    [
+     "stock",
+     "0x401f564e",
+     42
+    ],
+    [
+     "hex",
+     "000000000000"
+    ],
+    [
+     "stock",
+     "0x401f936a",
+     8
+    ],
+    [
+     "hex",
+     "1f000000000001c03f800000000003c07f80000000000e00f070000000000e00e070000000000e00e070000000000e00e070000000000e01c070000000000e038070000000000e078070000000000e070070000000000e0f00f00000000001fe03800000000001fe03800000000000f8000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x401834b8",
+     10
+    ],
+    [
+     "stock",
+     "0x401fa6a8",
+     8
+    ],
+    [
+     "stock",
+     "0x4020e2e2",
+     12
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "hex",
+     "0070000000000ffffff0000000000ffffff0000000000fff"
+    ],
+    [
+     "stock",
+     "0x401f564e",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "stock",
+     "0x401fccb2",
+     8
+    ],
+    [
+     "hex",
+     "003000000000001ff8000000"
+    ],
+    [
+     "stock",
+     "0x4022961e",
+     8
+    ],
+    [
+     "stock",
+     "0x40222234",
+     10
+    ],
+    [
+     "hex",
+     "01e00780"
+    ],
+    [
+     "stock",
+     "0x401fdb4c",
+     12
+    ],
+    [
+     "hex",
+     "0f8001f0000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000e000070000000000f8001f0"
+    ],
+    [
+     "stock",
+     "0x401fdb4c",
+     12
+    ],
+    [
+     "hex",
+     "01e00780"
+    ],
+    [
+     "stock",
+     "0x40222232",
+     12
+    ],
+    [
+     "hex",
+     "003ffc0000000000001f"
+    ],
+    [
+     "stock",
+     "0x401fa4ea",
+     20
+    ],
+    [
+     "hex",
+     "00000000"
+    ],
+    [
+     "stock",
+     "0x401fa736",
+     8
+    ],
+    [
+     "hex",
+     "fff0000000000ffffff0000000000fff"
+    ],
+    [
+     "stock",
+     "0x401f564e",
+     8
+    ],
+    [
+     "stock",
+     "0x401fc2d0",
+     8
+    ],
+    [
+     "hex",
+     "1ff0"
+    ],
+    [
+     "stock",
+     "0x4021c33e",
+     10
+    ],
+    [
+     "hex",
+     "0000"
+    ],
+    [
+     "stock",
+     "0x4021a0b0",
+     8
+    ],
+    [
+     "hex",
+     "007f8000"
+    ],
+    [
+     "stock",
+     "0x40222452",
+     12
+    ],
+    [
+     "stock",
+     "0x401fb888",
+     8
+    ],
+    [
+     "stock",
+     "0x40240ae8",
+     8
+    ],
+    [
+     "stock",
+     "0x40240ae8",
+     8
+    ],
+    [
+     "stock",
+     "0x401fa610",
+     8
+    ],
+    [
+     "hex",
+     "007f80000000"
+    ],
+    [
+     "stock",
+     "0x401aa4f0",
+     10
+    ],
+    [
+     "stock",
+     "0x4021c096",
+     10
+    ],
+    [
+     "hex",
+     "1ff0"
+    ],
+    [
+     "stock",
+     "0x401fc316",
+     10
+    ],
+    [
+     "hex",
+     "00000ffffff0000000000ffffff0000000000fff"
+    ],
+    [
+     "stock",
+     "0x401f564e",
+     36
+    ]
+   ]
+  }
+ },
+ "symbols": {
+  "csp_overlay": [
+   ".run",
+   20
+  ],
+  "csp_image": [
+   ".run",
+   64
+  ],
+  "csp_flush": [
+   ".run",
+   10
+  ],
+  "csp_diff": [
+   ".run",
+   0
+  ]
+ },
+ "exports": [
+  "csp_diff",
+  "csp_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   46,
+   "abs32",
+   "sec:.run",
+   64
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x4006c2d0",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3ac",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c864",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb68",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3a4",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c85c",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb60",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:csp_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "6794e0823ef9be9dd27bbe74e51c2a9f8a2647b1d04be2c20c4d1f5a6bcd42ad"
+  }
+ },
+ "signature": null
+}

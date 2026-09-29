@@ -1,0 +1,539 @@
+{
+ "elemod": 2,
+ "id": "digitussy",
+ "version": "1.0",
+ "title": "DigiTussy",
+ "description": "An animated Digitone boot splash: the DIGITUSSY wordmark bobbing over a field of rising particles, with a flickering underline. Drawn at the intro's panel presents; inert once the user interface takes over.",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitone-mk1",
+  "product": "Digitone mk1",
+  "os": "1.43",
+  "syx_sha256": "c5a54cc05b921f2e4bd814834c5365c2a5aa01d7772a9a2961fac1c3095bf9aa",
+  "section3_sha256": "3831a477a2a22befb23c42e47e782853da49566ef5d0a1767fcf6c30e6767414",
+  "section3_len": 2732208
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1012,
+   "parts": [
+    [
+     "hex",
+     "4eb9000000004ef9400f8efa4eb9000000004ef9400f8e7c2f03707f2f02b0af000c6534723fb2af0010652c"
+    ],
+    [
+     "stock",
+     "0x400057f0",
+     8
+    ],
+    [
+     "hex",
+     "e683123c0007e78a20790000000091c3c2af0010103c000141f02807e3a8121080811080"
+    ],
+    [
+     "stock",
+     "0x40033be8",
+     8
+    ],
+    [
+     "hex",
+     "ffd448d77cfc2039400003400c8040090cdc670a"
+    ],
+    [
+     "stock",
+     "0x400037b6",
+     10
+    ],
+    [
+     "hex",
+     "207940241a4423c80000000067e84a3900000000660000be28390000000043f90000000049f90000000047f90000000045f900000000203c41c64e6d767f4c004800243c41c64e6d7a05223c41c64e6d7c0320040680000030394c00280042404840783f0682000030394c02180042424842c083263c41c64e6d0681000030394c01380042414841c48412c00683000030392003280342404840028100007fff18c2028000007fff4c4510024c4600012002558016c02001528014c0b3fc000000006600ff72700123c3"
+    ],
+    [
+     "stock",
+     "0x402622d8",
+     8
+    ],
+    [
+     "hex",
+     "000020080680000004004218b08866fa2839000000002e0402878000001f6d0001e46d0001ce7410b4876c06762096872e03e58f70442c3c000000007a2849fafe88e8872c474dee0015"
+    ],
+    [
+     "stock",
+     "0x400a414e",
+     10
+    ],
+    [
+     "hex",
+     "7619b681652c710095ca20404bf00c00dbfc00000000779d428247f258000503663452827007b08266f4528a7205b28a66e420465c85101852864a00672c"
+    ],
+    [
+     "stock",
+     "0x400fb4b4",
+     8
+    ],
+    [
+     "hex",
+     "73817419b48165a80680ffffffe060a0487628002f0b4e94508f52827007b08266b660c07003c084665e2439000000002447760a45ea001e2a3c41c64e6d7c034c052800538306820000303920024c052800424048407a3006820000303922024241484123c2"
+    ],
+    [
+     "stock",
+     "0x40265624",
+     8
+    ],
+    [
+     "hex",
+     "7fffc2864c450006487218002046486800284e94508f4a8366b045f90000000047f9000000004df9000000004bf90000000073927793751e711dd48196804a826d00009e"
+    ],
+    [
+     "stock",
+     "0x40289fb6",
+     10
+    ],
+    [
+     "hex",
+     "ff804a836d482f03148216832f024e94508f08030000661e528a528bb5fc0000000066c0528423c40000"
+    ],
+    [
+     "stock",
+     "0x401347e4",
+     8
+    ],
+    [
+     "hex",
+     "002c4e75"
+    ],
+    [
+     "stock",
+     "0x400ccaf8",
+     8
+    ],
+    [
+     "hex",
+     "508f528a528bb5fc00000000669860d6203900000000223c41c64e6d767f4878003f4c01080016bc003f06800000303924004242484223c000000000c483163c00401482"
+    ],
+    [
+     "stock",
+     "0x40139ae2",
+     10
+    ],
+    [
+     "hex",
+     "4e94508f60ae0682000000806000ff680687000000207410b4876c00fe346000fe2a538772e08e8152876a00fe1860e000002545f4917e1111117e7f494949363e414141227f4141221c7f494949417f090901013e4149497a7f0808087f00417f41002040413f017f081422417f404040407f020c027f7f0408107f3e4141413e7f090909063e4151215e7f09192946464949493101017f01013f4040403f1f2040201f7f2018207f63140814630708700807615149454344494749545553535900"
+    ]
+   ]
+  },
+  ".bss": {
+   "align": 4,
+   "size": 266
+  }
+ },
+ "symbols": {
+  "px": [
+   ".run",
+   24
+  ],
+  "fb": [
+   ".bss",
+   262
+  ],
+  "ready": [
+   ".bss",
+   4
+  ],
+  "rs": [
+   ".run",
+   868
+  ],
+  "ppx": [
+   ".bss",
+   197
+  ],
+  "ppy": [
+   ".bss",
+   133
+  ],
+  "pvx": [
+   ".bss",
+   69
+  ],
+  "pvy": [
+   ".bss",
+   5
+  ],
+  "frame.914": [
+   ".bss",
+   0
+  ],
+  "font": [
+   ".run",
+   872
+  ],
+  "dt_draw": [
+   ".run",
+   94
+  ],
+  "dt_diff": [
+   ".run",
+   0
+  ],
+  "dt_flush": [
+   ".run",
+   12
+  ]
+ },
+ "exports": [
+  "dt_diff",
+  "dt_draw",
+  "dt_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   2,
+   "abs32",
+   "sec:.run",
+   94
+  ],
+  [
+   ".run",
+   14,
+   "abs32",
+   "sec:.run",
+   94
+  ],
+  [
+   ".run",
+   134,
+   "abs32",
+   "sec:.bss",
+   262
+  ],
+  [
+   ".run",
+   316,
+   "abs32",
+   "sec:.bss",
+   261
+  ],
+  [
+   ".run",
+   328,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   334,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   392,
+   "abs32",
+   "sec:.run",
+   1003
+  ],
+  [
+   ".run",
+   438,
+   "abs32",
+   "sec:.run",
+   547
+  ],
+  [
+   ".run",
+   592,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   708,
+   "abs32",
+   "sec:.bss",
+   261
+  ],
+  [
+   ".run",
+   718,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   748,
+   "abs32",
+   "sec:.bss",
+   261
+  ],
+  [
+   ".run",
+   796,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   62,
+   "abs32",
+   "sec:.bss",
+   262
+  ],
+  [
+   ".run",
+   142,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   152,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   158,
+   "abs32",
+   "sec:.bss",
+   197
+  ],
+  [
+   ".run",
+   164,
+   "abs32",
+   "sec:.bss",
+   133
+  ],
+  [
+   ".run",
+   170,
+   "abs32",
+   "sec:.bss",
+   69
+  ],
+  [
+   ".run",
+   176,
+   "abs32",
+   "sec:.bss",
+   5
+  ],
+  [
+   ".run",
+   354,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   534,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   628,
+   "abs32",
+   "sec:.bss",
+   197
+  ],
+  [
+   ".run",
+   634,
+   "abs32",
+   "sec:.bss",
+   133
+  ],
+  [
+   ".run",
+   640,
+   "abs32",
+   "sec:.bss",
+   69
+  ],
+  [
+   ".run",
+   646,
+   "abs32",
+   "sec:.bss",
+   5
+  ],
+  [
+   ".run",
+   758,
+   "abs32",
+   "sec:.run",
+   868
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x40090e58",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091000",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4009130a",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400917bc",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091ac0",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40090ff8",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091302",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400917b4",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091ab8",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "55d071e7f6d1b3e4595309241415f926c4ea450bce317ebf134a6c7a3db0fed9",
+   "render.c": "a45b836b57a67d78be037d4e5eb1a902cc8754502f3cca7a78e298ba2e0e118b"
+  }
+ },
+ "signature": null
+}

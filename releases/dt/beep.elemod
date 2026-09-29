@@ -1,0 +1,326 @@
+{
+ "elemod": 2,
+ "id": "beep",
+ "version": "1.0",
+ "title": "beep",
+ "description": "Boot animation generated from beep.png (1 frame). Drawn over the intro panel while it is live.",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitakt-mk1",
+  "product": "Digitakt mk1",
+  "os": "1.53",
+  "syx_sha256": "9bdd44bb6102fb25c143cfab97bc92b7a89c463f795d3112dce89771e29bcc92",
+  "section3_sha256": "4b47a9507758ca5669ca02ab2c0374d2c04c98aece445408295cc1dcb265c5df",
+  "section3_len": 2475584
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1120,
+   "parts": [
+    [
+     "hex",
+     "610000124ef9400e60e2610000084ef9400e60642039400003400c804006c154663820794020d8f84a88672e203a002e52800c80000000016602428023c000000000e188e5880680000000002240203c0000010020d9538066fa"
+    ],
+    [
+     "stock",
+     "0x4017c962",
+     8
+    ],
+    [
+     "hex",
+     "bfffffffffe002201fffffffffe000002fffffffffe0000a07ffffffffe000002fffc00fffe0000000f0"
+    ],
+    [
+     "stock",
+     "0x40217ba6",
+     10
+    ],
+    [
+     "stock",
+     "0x4022e0ec",
+     8
+    ],
+    [
+     "hex",
+     "0fe0"
+    ],
+    [
+     "stock",
+     "0x40220ab2",
+     10
+    ],
+    [
+     "stock",
+     "0x40240894",
+     12
+    ],
+    [
+     "stock",
+     "0x4022fb76",
+     8
+    ],
+    [
+     "stock",
+     "0x401fc310",
+     8
+    ],
+    [
+     "stock",
+     "0x401aa526",
+     8
+    ],
+    [
+     "stock",
+     "0x401a9aa6",
+     8
+    ],
+    [
+     "stock",
+     "0x401834c6",
+     16
+    ],
+    [
+     "stock",
+     "0x401aa832",
+     8
+    ],
+    [
+     "stock",
+     "0x401aa832",
+     8
+    ],
+    [
+     "stock",
+     "0x401aa832",
+     8
+    ],
+    [
+     "hex",
+     "0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x401fa6e6",
+     10
+    ],
+    [
+     "hex",
+     "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    [
+     "stock",
+     "0x40216ac2",
+     10
+    ],
+    [
+     "stock",
+     "0x401aa21e",
+     12
+    ],
+    [
+     "stock",
+     "0x401834c6",
+     8
+    ],
+    [
+     "hex",
+     "000d80000000000000185f000000000000100bbe000000000018411f8c000000001debbf06000000003ffffe03000000003ffffc23800000003ffffae1c00000003f7fe011f00001001e1fc001f80003000f0fe001fc000100031fc381e0000000011fe1c100000800001fc03800"
+    ],
+    [
+     "stock",
+     "0x40220a68",
+     8
+    ],
+    [
+     "stock",
+     "0x40240894",
+     8
+    ],
+    [
+     "stock",
+     "0x4018f24a",
+     12
+    ],
+    [
+     "stock",
+     "0x4022fb72",
+     8
+    ],
+    [
+     "hex",
+     "ac00000003e000001f00000007e000002ffc00001fe0008207ff8000ffe000002ffff007ffc002201fffe3ffff0000002ffff7fffc00008207ffe3ffe06000002fffc3ef006002201fffc3c400e000002fff83e003e0008207ff07c007e000002fff070003e000201ffe060037e000002ffe00007fe0000207f80001ffe020016ff00000ffe000006fe0000dffe0000007f0001fffe0006007ff807fffe0003801ffc0ffffe00026007fe1ffffe00001801fe1f7ffe00040e007e3e3d1e00040f801f7c180e000209600ff00c0e0000103807e00406000608300380028e00078821020081fe000210400000c1fe00000020000003fe00020020001803fe00061a01000c07d0000410600200098000000001030030d0000000200380407e0006082103c0003e0000194103f0001e0002002003f0000e0000080103e0000600061e0003e00006000e3f4003f0000e00041fe003f0419e000009f10340230e0000007b02001c0600060021034010030006500103a0000180001820030000008000084103a200000004004003fe00000002080003ff000080001c200347041800020e310203822010040f7b0347810010021fe103f7800010033fc301e380000002396100c000020004100000003003000008200000f000000608390003f800000290700207fde0100418380007fff03000007000007ff850061838020007ff800308700300000d00079078030000000003f0300200000c0001f0380000007e00007a30000007fe00001f780003effe00000ff00081fffe0"
+    ]
+   ]
+  }
+ },
+ "symbols": {
+  "beep_advance": [
+   ".run",
+   20
+  ],
+  "beep_idx": [
+   ".run",
+   92
+  ],
+  "beep_frames": [
+   ".run",
+   96
+  ],
+  "beep_diff": [
+   ".run",
+   0
+  ],
+  "beep_flush": [
+   ".run",
+   10
+  ]
+ },
+ "exports": [
+  "beep_diff",
+  "beep_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   62,
+   "abs32",
+   "sec:.run",
+   92
+  ],
+  [
+   ".run",
+   72,
+   "abs32",
+   "sec:.run",
+   96
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x4006c2d0",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3ac",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c864",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb68",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3a4",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c85c",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb60",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:beep_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "c0f9cc6bea19d92e898e4fc96eb9312ef29c39ed898fee41c337819779a24cb5"
+  }
+ },
+ "signature": null
+}

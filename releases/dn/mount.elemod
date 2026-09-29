@@ -1,0 +1,528 @@
+{
+ "elemod": 2,
+ "id": "mount",
+ "version": "1.0",
+ "title": "mount",
+ "description": "Boot animation generated from mount.png (1 frame). Drawn over the intro panel while it is live.",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitone-mk1",
+  "product": "Digitone mk1",
+  "os": "1.43",
+  "syx_sha256": "c5a54cc05b921f2e4bd814834c5365c2a5aa01d7772a9a2961fac1c3095bf9aa",
+  "section3_sha256": "3831a477a2a22befb23c42e47e782853da49566ef5d0a1767fcf6c30e6767414",
+  "section3_len": 2732208
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1120,
+   "parts": [
+    [
+     "hex",
+     "610000124ef9400f8efa610000084ef9400f8e7c2039400003400c8040090cdc6638207940241a444a88672e203a002e52800c80000000016602428023c000000000e188e5880680000000002240203c0000010020d9538066fa"
+    ],
+    [
+     "stock",
+     "0x4028c602",
+     12
+    ],
+    [
+     "stock",
+     "0x401911ea",
+     8
+    ],
+    [
+     "hex",
+     "0a100000000000000430"
+    ],
+    [
+     "stock",
+     "0x4022cd92",
+     10
+    ],
+    [
+     "stock",
+     "0x402404f0",
+     8
+    ],
+    [
+     "hex",
+     "0000000008f00000"
+    ],
+    [
+     "stock",
+     "0x402404f0",
+     8
+    ],
+    [
+     "hex",
+     "0000000000e00a000000000041f000000000000023f0"
+    ],
+    [
+     "stock",
+     "0x4026bfa2",
+     14
+    ],
+    [
+     "stock",
+     "0x40263caa",
+     8
+    ],
+    [
+     "stock",
+     "0x4022d76e",
+     8
+    ],
+    [
+     "hex",
+     "0c308000000020000610c010000000000300e808a00800000180c444001c004008c0e2eea03e000001e0c7fff01b000000e0e3fbe0b1a00000c0f1e1f463e1540080e3c1fec1c1f00180f188ff83c2600300fb01ffc7040001107f88fe8208000b103f01fc44080006107f83b808000002203f831040000006301e06100000000a30380c001000000030101800200000022020080000000000301000000000000870"
+    ],
+    [
+     "stock",
+     "0x4026bcd2",
+     8
+    ],
+    [
+     "stock",
+     "0x4022cd92",
+     10
+    ],
+    [
+     "stock",
+     "0x40242416",
+     12
+    ],
+    [
+     "hex",
+     "00f00000"
+    ],
+    [
+     "stock",
+     "0x402404f0",
+     8
+    ],
+    [
+     "hex",
+     "4000"
+    ],
+    [
+     "stock",
+     "0x40263ca8",
+     10
+    ],
+    [
+     "hex",
+     "00f000001040000000f000020020000000f004000010000000e002000008800000f003000005000000f000000000000000f003501000000000e00fe03a00000000701fd57e50000000703f88ec0a200000301fc140c6000004203b0a0008000000101004041000000110a00a082000000000c00010200000040080402000000000c004c040000000016088808000000000301081000000000430"
+    ],
+    [
+     "stock",
+     "0x402577d6",
+     8
+    ],
+    [
+     "hex",
+     "600000000000018020000000000000802000"
+    ],
+    [
+     "stock",
+     "0x4028a912",
+     10
+    ],
+    [
+     "stock",
+     "0x4018d28c",
+     8
+    ],
+    [
+     "stock",
+     "0x4018e984",
+     8
+    ],
+    [
+     "stock",
+     "0x4018cd44",
+     10
+    ],
+    [
+     "stock",
+     "0x4022dd82",
+     8
+    ],
+    [
+     "hex",
+     "00100004"
+    ],
+    [
+     "stock",
+     "0x4018d276",
+     12
+    ],
+    [
+     "stock",
+     "0x40242412",
+     8
+    ],
+    [
+     "stock",
+     "0x4022dd1a",
+     16
+    ],
+    [
+     "stock",
+     "0x402559ec",
+     8
+    ],
+    [
+     "stock",
+     "0x40242194",
+     8
+    ],
+    [
+     "hex",
+     "0400"
+    ],
+    [
+     "stock",
+     "0x40229bbe",
+     8
+    ],
+    [
+     "hex",
+     "1800000000000030180000000000007018000000000000e010000000000001f000100000000001f010000000000001f01000"
+    ],
+    [
+     "stock",
+     "0x4027b4d8",
+     12
+    ],
+    [
+     "stock",
+     "0x4027b4dc",
+     8
+    ],
+    [
+     "stock",
+     "0x4027b4dc",
+     8
+    ],
+    [
+     "stock",
+     "0x4022bd0a",
+     8
+    ],
+    [
+     "stock",
+     "0x4022af14",
+     8
+    ],
+    [
+     "stock",
+     "0x4018dd7e",
+     8
+    ],
+    [
+     "hex",
+     "041e0c0000000000007f0c000000000000ff0c000000000000ff0800"
+    ],
+    [
+     "stock",
+     "0x40256586",
+     12
+    ],
+    [
+     "stock",
+     "0x4025658a",
+     8
+    ],
+    [
+     "hex",
+     "01ff000000000004"
+    ],
+    [
+     "stock",
+     "0x401d3f2a",
+     8
+    ],
+    [
+     "hex",
+     "08ff000000000001087f000000000000841e0000000000044200000000000000e30000000000000163c00004"
+    ],
+    [
+     "stock",
+     "0x40254b9c",
+     8
+    ],
+    [
+     "hex",
+     "00000004"
+    ],
+    [
+     "stock",
+     "0x40270070",
+     8
+    ],
+    [
+     "hex",
+     "0fe0"
+    ],
+    [
+     "stock",
+     "0x4025a886",
+     8
+    ],
+    [
+     "hex",
+     "0002000000003ff0000100000004"
+    ],
+    [
+     "stock",
+     "0x4022cd8c",
+     8
+    ],
+    [
+     "stock",
+     "0x40262220",
+     8
+    ],
+    [
+     "hex",
+     "1ff0"
+    ],
+    [
+     "stock",
+     "0x4024dac6",
+     10
+    ],
+    [
+     "stock",
+     "0x4024dac8",
+     8
+    ],
+    [
+     "stock",
+     "0x40262308",
+     8
+    ],
+    [
+     "stock",
+     "0x4022ce54",
+     8
+    ],
+    [
+     "stock",
+     "0x4022ce54",
+     8
+    ],
+    [
+     "stock",
+     "0x40280034",
+     12
+    ],
+    [
+     "hex",
+     "01e002000000000010f0020000000000287003000000000004300300000000000e000300000000001f100200000000003e100000000000001c30000000000000386000100000000010f000200000000021f0"
+    ]
+   ]
+  }
+ },
+ "symbols": {
+  "mount_advance": [
+   ".run",
+   20
+  ],
+  "mount_idx": [
+   ".run",
+   92
+  ],
+  "mount_frames": [
+   ".run",
+   96
+  ],
+  "mount_flush": [
+   ".run",
+   10
+  ],
+  "mount_diff": [
+   ".run",
+   0
+  ]
+ },
+ "exports": [
+  "mount_diff",
+  "mount_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   62,
+   "abs32",
+   "sec:.run",
+   92
+  ],
+  [
+   ".run",
+   72,
+   "abs32",
+   "sec:.run",
+   96
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x40090e58",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091000",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4009130a",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400917bc",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091ac0",
+   "len": 6,
+   "stock_sha256": "bac89b34d8e5ac08fd74f3838fdf7f3ea968aefbac9f1849e388d7e5d3a1e87d",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40090ff8",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091302",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x400917b4",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x40091ab8",
+   "len": 6,
+   "stock_sha256": "bd5ded5688189fedb40d4e642e291949f5752ce121a39e67278b1c24616c811f",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:mount_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "6403e4b1db7d3f949d163acc1c4cfa6c697857683eae5b55156d2c7c1f586408"
+  }
+ },
+ "signature": null
+}

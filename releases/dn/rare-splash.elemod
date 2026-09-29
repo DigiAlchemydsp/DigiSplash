@@ -1,0 +1,48 @@
+{
+ "elemod": 2,
+ "id": "rare-splash",
+ "version": "1.0",
+ "title": "Rare splash",
+ "description": "Boots the Digitone on the alternate stock splash animation instead of the usual one. The intro picks between two whole animations from a generator that is never seeded, so the rare one (0.1% nominal weight) is unreachable on stock; this makes it the one you get. Nothing else changes.",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitone-mk1",
+  "product": "Digitone mk1",
+  "os": "1.43",
+  "syx_sha256": "c5a54cc05b921f2e4bd814834c5365c2a5aa01d7772a9a2961fac1c3095bf9aa",
+  "section3_sha256": "3831a477a2a22befb23c42e47e782853da49566ef5d0a1767fcf6c30e6767414",
+  "section3_len": 2732208
+ },
+ "sections": {},
+ "symbols": {},
+ "exports": [],
+ "imports": [],
+ "weak": [],
+ "relocs": [],
+ "sites": [
+  {
+   "addr": "0x40090e82",
+   "len": 4,
+   "stock_sha256": "ee0e7a595e226a43ca4d1ab3d7b226bb1b21bd0f13b36370521226566f3703a1",
+   "new": "4e714e71",
+   "kind": "code",
+   "relocs": []
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {}
+ },
+ "signature": null
+}

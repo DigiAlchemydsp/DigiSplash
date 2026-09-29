@@ -103,6 +103,7 @@ it with elekloader as above. See
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | how the intro selects and presents, and where each mod hooks |
 | [digitone1/README.md](digitone1/README.md) | the Digitone addresses and build/install commands |
 | [tools/re/README.md](tools/re/README.md) | reverse-engineering and capture instruments |
+| [releases/](releases) | prebuilt `.elemod` files, DT and DN variants |
 | [NOTICE.md](NOTICE.md) | licence and the independence statement |
 
 ## Layout
@@ -113,6 +114,7 @@ digitone1/mods/<id>/      Digitone mk1 / Keys mods
 mods/<id>/*.s,*.c         sources;  out/ is build output (gitignored)
 tools/make-bootanim/      PNG/GIF -> splash mod generator
 tools/re/                 reverse-engineering and capture instruments
+releases/                 prebuilt .elemod files (dt/, dn/)
 screenshots/              captured in digiemu
 docs/                     the guides above
 ```

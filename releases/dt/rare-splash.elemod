@@ -1,0 +1,48 @@
+{
+ "elemod": 2,
+ "id": "rare-splash",
+ "version": "1.0",
+ "title": "Rare splash",
+ "description": "Boots on the alternate splash animation instead of the usual one. The intro task draws one pseudo-random number and picks between two whole animations, but the generator is never seeded, so the rare one (0.1% nominal weight) is unreachable on stock; this makes it the one you get. Nothing else changes.",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitakt-mk1",
+  "product": "Digitakt mk1",
+  "os": "1.53",
+  "syx_sha256": "9bdd44bb6102fb25c143cfab97bc92b7a89c463f795d3112dce89771e29bcc92",
+  "section3_sha256": "4b47a9507758ca5669ca02ab2c0374d2c04c98aece445408295cc1dcb265c5df",
+  "section3_len": 2475584
+ },
+ "sections": {},
+ "symbols": {},
+ "exports": [],
+ "imports": [],
+ "weak": [],
+ "relocs": [],
+ "sites": [
+  {
+   "addr": "0x4006c2fa",
+   "len": 4,
+   "stock_sha256": "f3238a179a7bfc6acc18996c5bbcce393e6aceae244cab76181a5c399e7dd7be",
+   "new": "4e714e71",
+   "kind": "code",
+   "relocs": []
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {}
+ },
+ "signature": null
+}

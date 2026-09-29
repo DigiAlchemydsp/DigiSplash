@@ -1,0 +1,330 @@
+{
+ "elemod": 2,
+ "id": "experience",
+ "version": "1.0",
+ "title": "experience",
+ "description": "Boot animation generated from experience.png (1 frame). Drawn over the intro panel while it is live.",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitakt-mk1",
+  "product": "Digitakt mk1",
+  "os": "1.53",
+  "syx_sha256": "9bdd44bb6102fb25c143cfab97bc92b7a89c463f795d3112dce89771e29bcc92",
+  "section3_sha256": "4b47a9507758ca5669ca02ab2c0374d2c04c98aece445408295cc1dcb265c5df",
+  "section3_len": 2475584
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1120,
+   "parts": [
+    [
+     "hex",
+     "610000124ef9400e60e2610000084ef9400e60642039400003400c804006c154663820794020d8f84a88672e203a002e52800c80000000016602428023c000000000e188e5880680000000002240203c0000010020d9538066fa"
+    ],
+    [
+     "stock",
+     "0x4017c962",
+     10
+    ],
+    [
+     "hex",
+     "008fffff000000000107ffff"
+    ],
+    [
+     "stock",
+     "0x401aa158",
+     10
+    ],
+    [
+     "hex",
+     "00000003ffffc00000000001fffff00000000001"
+    ],
+    [
+     "stock",
+     "0x402221b0",
+     10
+    ],
+    [
+     "stock",
+     "0x402221b2",
+     8
+    ],
+    [
+     "hex",
+     "fc00000000007ffffc00000000407ffffe00000000003ffffe0000000000"
+    ],
+    [
+     "stock",
+     "0x402267b0",
+     8
+    ],
+    [
+     "stock",
+     "0x40222226",
+     8
+    ],
+    [
+     "hex",
+     "07ff3e000000000003ff0e000000000001ff0200"
+    ],
+    [
+     "stock",
+     "0x401ad2c6",
+     8
+    ],
+    [
+     "stock",
+     "0x401ad2c6",
+     8
+    ],
+    [
+     "stock",
+     "0x401b893a",
+     10
+    ],
+    [
+     "hex",
+     "0000003f00000007c000001f0000003b8000001f000000f10000000f000001f88100000f000007fd8000000700000ff80000000700001ffc0010000700003bff00300007000071e78038000300007383c67800030000e301effc00010000e380fffc00010000f7f1fffe00010000f7fbffff00010000e3ffde7f80010000e3ff8c3f8001000071ffc61f000100007befc31e000300003fc7031e000300001fe2021c000300000fe402380007000007c402300007000003e200200007000001f70040000f000000fe0000000f0000001f"
+    ],
+    [
+     "stock",
+     "0x401aa0c8",
+     8
+    ],
+    [
+     "stock",
+     "0x401aa4f0",
+     10
+    ],
+    [
+     "hex",
+     "003f1c0000000000003f7c00"
+    ],
+    [
+     "stock",
+     "0x402411aa",
+     12
+    ],
+    [
+     "hex",
+     "00fffc0000004000"
+    ],
+    [
+     "stock",
+     "0x4021c95c",
+     8
+    ],
+    [
+     "hex",
+     "03ff"
+    ],
+    [
+     "stock",
+     "0x4022def2",
+     8
+    ],
+    [
+     "hex",
+     "f800"
+    ],
+    [
+     "stock",
+     "0x401fbfd0",
+     8
+    ],
+    [
+     "hex",
+     "000000003ffff000000000007ffff000000000007fffe00000000002ffff800000000001ffff00000000002a"
+    ],
+    [
+     "stock",
+     "0x40181fde",
+     8
+    ],
+    [
+     "hex",
+     "7fff00000000008affff000000000041ffff000000000022"
+    ],
+    [
+     "stock",
+     "0x40181fde",
+     8
+    ],
+    [
+     "hex",
+     "7fff00000000008afeff000000000001fc7f00800000000af8ff000000000000747f00000000008ae2bf000000000001f11f000000000022e23f000000000000771f00000000800affbf00000000c001ffff00000000e00affff00020000fc007fff00000000ff02ffff00000001ffc1ffff00000007ffe0ffff00000007fff07fff00000003fff87fff00800003fff87fff00000103fffc3fff00000003fffc3fff00000003fffc1fff00000407fffe1fff20000607fffe1fbf00000003fffe1f1f00000023fffe1e1f00000003fffe1c0f00000003fffe1e0f00000007fffe1c0700000407fffe1e0700000083fffe1c0300000007fffc1e0300800003fffc3f0300000103fffc3e0300000003fff83f0700000003fff87e0f00000017fff07d0f00000007ffe0f88f00000001ffc1f18f00000000ff03e0df00000000fc01f1ff00000000e00be0ff00000000c001c1ff000000008023e3ff000000000001c1ff00000000008be3ff000000000001c1ff000000000023e0ff000000000001c07f00800000008be03f000000000001c03f00000000000be03f000000000001c07f00000000008b807f000000000001c07f000000000023803f000000000001c01f00000000008b800f0000000000018007000000000023c007000000000001800700000000008bc007000000000001800f"
+    ]
+   ]
+  }
+ },
+ "symbols": {
+  "experience_advance": [
+   ".run",
+   20
+  ],
+  "experience_idx": [
+   ".run",
+   92
+  ],
+  "experience_frames": [
+   ".run",
+   96
+  ],
+  "experience_flush": [
+   ".run",
+   10
+  ],
+  "experience_diff": [
+   ".run",
+   0
+  ]
+ },
+ "exports": [
+  "experience_diff",
+  "experience_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   62,
+   "abs32",
+   "sec:.run",
+   92
+  ],
+  [
+   ".run",
+   72,
+   "abs32",
+   "sec:.run",
+   96
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x4006c2d0",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3ac",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c864",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb68",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3a4",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c85c",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb60",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:experience_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "c3e709b5bfa8499310effb04253bdecb7ece58d8fbc85b8dfeab74742cc50982"
+  }
+ },
+ "signature": null
+}

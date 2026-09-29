@@ -9,6 +9,7 @@ __pycache__/
 *.syx
 *.syx.json
 *.syx.map.json
+!releases/**/*.elemod
 
 # firmware and anything derived from it: never commit (see NOTICE.md)
 *.snap

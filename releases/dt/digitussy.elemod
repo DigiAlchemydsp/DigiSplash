@@ -1,0 +1,509 @@
+{
+ "elemod": 2,
+ "id": "digitussy",
+ "version": "1.0",
+ "title": "DigiTussy",
+ "description": "An animated boot splash: the DIGITUSSY wordmark bobbing over a field of rising particles, with a flickering underline. Drawn at the intro's panel presents; inert once the user interface takes over.",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "target": {
+  "device": "digitakt-mk1",
+  "product": "Digitakt mk1",
+  "os": "1.53",
+  "syx_sha256": "9bdd44bb6102fb25c143cfab97bc92b7a89c463f795d3112dce89771e29bcc92",
+  "section3_sha256": "4b47a9507758ca5669ca02ab2c0374d2c04c98aece445408295cc1dcb265c5df",
+  "section3_len": 2475584
+ },
+ "sections": {
+  ".run": {
+   "align": 4,
+   "len": 1012,
+   "parts": [
+    [
+     "hex",
+     "4eb9000000004ef9400e60e24eb9000000004ef9400e60642f03707f2f02b0af000c6534723fb2af0010652c"
+    ],
+    [
+     "stock",
+     "0x400055b4",
+     8
+    ],
+    [
+     "hex",
+     "e683123c0007e78a20790000000091c3c2af0010103c000141f02807e3a8121080811080"
+    ],
+    [
+     "stock",
+     "0x40008672",
+     8
+    ],
+    [
+     "hex",
+     "ffd448d77cfc2039400003400c804006c154670a"
+    ],
+    [
+     "stock",
+     "0x400035ea",
+     10
+    ],
+    [
+     "hex",
+     "20794020d8f823c80000000067e84a3900000000660000be28390000000043f90000000049f90000000047f90000000045f900000000203c41c64e6d767f4c004800243c41c64e6d7a05223c41c64e6d7c0320040680000030394c00280042404840783f0682000030394c02180042424842c083263c41c64e6d0681000030394c01380042414841c48412c00683000030392003280342404840028100007fff18c2028000007fff4c4510024c4600012002558016c02001528014c0b3fc000000006600ff72700123c3"
+    ],
+    [
+     "stock",
+     "0x4022e1a4",
+     8
+    ],
+    [
+     "hex",
+     "000020080680000004004218b08866fa2839000000002e0402878000001f6d0001e46d0001ce7410b4876c06762096872e03e58f70442c3c000000007a2849fafe88e8872c474dee0015"
+    ],
+    [
+     "stock",
+     "0x40089ca2",
+     10
+    ],
+    [
+     "hex",
+     "7619b681652c710095ca20404bf00c00dbfc00000000779d428247f258000503663452827007b08266f4528a7205b28a66e420465c85101852864a00672c"
+    ],
+    [
+     "stock",
+     "0x400e8510",
+     8
+    ],
+    [
+     "hex",
+     "73817419b48165a80680ffffffe060a0487628002f0b4e94508f52827007b08266b660c07003c084665e2439000000002447760a45ea001e2a3c41c64e6d7c034c052800538306820000303920024c052800424048407a3006820000303922024241484123c2"
+    ],
+    [
+     "stock",
+     "0x402314f0",
+     8
+    ],
+    [
+     "hex",
+     "7fffc2864c450006487218002046486800284e94508f4a8366b045f90000000047f9000000004df9000000004bf90000000073927793751e711dd48196804a826d00009e"
+    ],
+    [
+     "stock",
+     "0x40250138",
+     10
+    ],
+    [
+     "hex",
+     "ff804a836d482f03148216832f024e94508f08030000661e528a528bb5fc0000000066c0528423c40000"
+    ],
+    [
+     "stock",
+     "0x401214d8",
+     8
+    ],
+    [
+     "hex",
+     "002c4e75"
+    ],
+    [
+     "stock",
+     "0x400a6a68",
+     8
+    ],
+    [
+     "hex",
+     "508f528a528bb5fc00000000669860d6203900000000223c41c64e6d767f4878003f4c01080016bc003f06800000303924004242484223c000000000c483163c00401482"
+    ],
+    [
+     "stock",
+     "0x40126d92",
+     10
+    ],
+    [
+     "hex",
+     "4e94508f60ae0682000000806000ff680687000000207410b4876c00fe346000fe2a538772e08e8152876a00fe1860e000002545f4917e1111117e7f494949363e414141227f4141221c7f494949417f090901013e4149497a7f0808087f00417f41002040413f017f081422417f404040407f020c027f7f0408107f3e4141413e7f090909063e4151215e7f09192946464949493101017f01013f4040403f1f2040201f7f2018207f63140814630708700807615149454344494749545553535900"
+    ]
+   ]
+  },
+  ".bss": {
+   "align": 4,
+   "size": 266
+  }
+ },
+ "symbols": {
+  "px": [
+   ".run",
+   24
+  ],
+  "fb": [
+   ".bss",
+   262
+  ],
+  "ready": [
+   ".bss",
+   4
+  ],
+  "rs": [
+   ".run",
+   868
+  ],
+  "ppx": [
+   ".bss",
+   197
+  ],
+  "ppy": [
+   ".bss",
+   133
+  ],
+  "pvx": [
+   ".bss",
+   69
+  ],
+  "pvy": [
+   ".bss",
+   5
+  ],
+  "frame.914": [
+   ".bss",
+   0
+  ],
+  "font": [
+   ".run",
+   872
+  ],
+  "dt_draw": [
+   ".run",
+   94
+  ],
+  "dt_diff": [
+   ".run",
+   0
+  ],
+  "dt_flush": [
+   ".run",
+   12
+  ]
+ },
+ "exports": [
+  "dt_diff",
+  "dt_draw",
+  "dt_flush"
+ ],
+ "imports": [],
+ "weak": [],
+ "relocs": [
+  [
+   ".run",
+   2,
+   "abs32",
+   "sec:.run",
+   94
+  ],
+  [
+   ".run",
+   14,
+   "abs32",
+   "sec:.run",
+   94
+  ],
+  [
+   ".run",
+   134,
+   "abs32",
+   "sec:.bss",
+   262
+  ],
+  [
+   ".run",
+   316,
+   "abs32",
+   "sec:.bss",
+   261
+  ],
+  [
+   ".run",
+   328,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   334,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   392,
+   "abs32",
+   "sec:.run",
+   1003
+  ],
+  [
+   ".run",
+   438,
+   "abs32",
+   "sec:.run",
+   547
+  ],
+  [
+   ".run",
+   592,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   708,
+   "abs32",
+   "sec:.bss",
+   261
+  ],
+  [
+   ".run",
+   718,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   748,
+   "abs32",
+   "sec:.bss",
+   261
+  ],
+  [
+   ".run",
+   796,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   62,
+   "abs32",
+   "sec:.bss",
+   262
+  ],
+  [
+   ".run",
+   142,
+   "abs32",
+   "sec:.bss",
+   4
+  ],
+  [
+   ".run",
+   152,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   158,
+   "abs32",
+   "sec:.bss",
+   197
+  ],
+  [
+   ".run",
+   164,
+   "abs32",
+   "sec:.bss",
+   133
+  ],
+  [
+   ".run",
+   170,
+   "abs32",
+   "sec:.bss",
+   69
+  ],
+  [
+   ".run",
+   176,
+   "abs32",
+   "sec:.bss",
+   5
+  ],
+  [
+   ".run",
+   354,
+   "abs32",
+   "sec:.bss",
+   0
+  ],
+  [
+   ".run",
+   534,
+   "abs32",
+   "sec:.run",
+   868
+  ],
+  [
+   ".run",
+   628,
+   "abs32",
+   "sec:.bss",
+   197
+  ],
+  [
+   ".run",
+   634,
+   "abs32",
+   "sec:.bss",
+   133
+  ],
+  [
+   ".run",
+   640,
+   "abs32",
+   "sec:.bss",
+   69
+  ],
+  [
+   ".run",
+   646,
+   "abs32",
+   "sec:.bss",
+   5
+  ],
+  [
+   ".run",
+   758,
+   "abs32",
+   "sec:.run",
+   868
+  ]
+ ],
+ "sites": [
+  {
+   "addr": "0x4006c2d0",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3ac",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c864",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb68",
+   "len": 6,
+   "stock_sha256": "5cc9a131cbf08f1003778ace9497cd2dc9c3f7bf54e5c56c727654a4c860deea",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_diff",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c3a4",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006c85c",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  },
+  {
+   "addr": "0x4006cb60",
+   "len": 6,
+   "stock_sha256": "f1b8cd44720e52777176630c21c717a9b96c5fbd63f968eaa350e701cb1e0ddb",
+   "new": "4eb900000000",
+   "kind": "code",
+   "relocs": [
+    [
+     2,
+     "abs32",
+     "sym:dt_flush",
+     0
+    ]
+   ]
+  }
+ ],
+ "collections": {},
+ "contribute": [],
+ "copied": [],
+ "resources": {
+  "names": []
+ },
+ "requires": [
+  "core"
+ ],
+ "conflicts": [],
+ "build": {
+  "sources": {
+   "splash.s": "632d87aae791cf6bf3cde5ce4f3a0fe2b183e5d4afff63fab6fd3dcd141434d0",
+   "render.c": "3ed5bcd5d41292a9093b9cacf52ab03b89a723eb72afcffef267483dda4ce561"
+  }
+ },
+ "signature": null
+}
