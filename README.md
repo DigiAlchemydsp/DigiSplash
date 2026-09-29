@@ -48,6 +48,27 @@ different instruction and combines with any of them. The same rule holds within
 each device section (a Digitakt mod and a Digitone mod are never combined — they
 target different OS files).
 
+## Releases
+
+Prebuilt `.elemod` files for every splash are in [`releases/`](releases):
+`releases/dt/` for the Digitakt and `releases/dn/` for the Digitone, 14 each.
+Install one draw mod at a time — see [releases/README.md](releases/README.md).
+
+![custom-splash](releases/screenshots/custom-splash.png)
+![rare-splash](releases/screenshots/rare-splash.gif)
+![digitussy](releases/screenshots/digitussy.gif)
+![digitrash](releases/screenshots/digitrash.gif)
+![aba](releases/screenshots/aba-bootanim.gif)
+![beep](releases/screenshots/beep.png)
+![catbooting](releases/screenshots/catbooting.png)
+![catscan](releases/screenshots/catscan.png)
+![discover](releases/screenshots/discover.png)
+![experience](releases/screenshots/experience.png)
+![mount](releases/screenshots/mount.png)
+![pfft](releases/screenshots/pfft.png)
+![planet1](releases/screenshots/planet1.png)
+![loop](releases/screenshots/loop.gif)
+
 ## Quick start
 
 ```sh

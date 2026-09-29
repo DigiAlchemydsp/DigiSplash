@@ -20,6 +20,9 @@ device variants:
 `catbooting`, `catscan`, `mount`, … are static (one frame); `loop` and the
 `digitussy`/`digitrash`/`aba-bootanim` ones animate.
 
+A rendered screenshot of each is in [`screenshots/`](screenshots) (also shown
+in the main [README](../README.md#releases)).
+
 ## Install
 
 With elekloader:
