@@ -5,6 +5,11 @@ Digitone mk1 / Keys (OS 1.43).
 
 ![example](../../screenshots/bootanim-example.gif)
 
+A real example, generated from an `aba.gif` for the Digitone and captured in
+digiemu (3 frames, cycling):
+
+![aba example](../../screenshots/aba-dn1.gif)
+
 It writes a ready-to-build elekloader mod folder: the frames packed to the
 128x64 panel format, an assembly stub that cycles them at the intro's panel
 presents, and a `mod.json` with the device's sites. You then build and patch
