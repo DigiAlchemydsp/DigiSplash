@@ -1,0 +1,23 @@
+{
+ "id": "digitrash",
+ "version": "1.0",
+ "title": "DigiTrash",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "description": "An animated boot splash: the DIGITRASH wordmark and a trash can with six flies buzzing and wandering around them. Drawn at the intro's panel presents; inert once the user interface takes over.",
+ "device": "digitakt-mk1",
+ "os": "1.53",
+ "sources": ["splash.s", "render.c"],
+ "sites": [
+  {"addr": "0x4006c2d0", "stock": "4eb9400e60e2", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x4006c3ac", "stock": "4eb9400e60e2", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x4006c864", "stock": "4eb9400e60e2", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x4006cb68", "stock": "4eb9400e60e2", "op": "jsr", "target": "dtr_diff"},
+  {"addr": "0x4006c3a4", "stock": "4eb9400e6064", "op": "jsr", "target": "dtr_flush"},
+  {"addr": "0x4006c85c", "stock": "4eb9400e6064", "op": "jsr", "target": "dtr_flush"},
+  {"addr": "0x4006cb60", "stock": "4eb9400e6064", "op": "jsr", "target": "dtr_flush"}
+ ],
+ "requires": ["core"],
+ "resources": {"names": []}
+}

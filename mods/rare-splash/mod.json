@@ -1,0 +1,16 @@
+{
+ "id": "rare-splash",
+ "version": "1.0",
+ "title": "Rare splash",
+ "category": "Boot",
+ "author": "benan",
+ "license": "GPL-2.0-or-later",
+ "description": "Boots on the alternate splash animation instead of the usual one. The intro task draws one pseudo-random number and picks between two whole animations, but the generator is never seeded, so the rare one (0.1% nominal weight) is unreachable on stock; this makes it the one you get. Nothing else changes.",
+ "device": "digitakt-mk1",
+ "os": "1.53",
+ "sites": [
+  {"addr": "0x4006c2fa", "stock": "6f0000d6", "op": "bytes", "new": "4e714e71", "kind": "code"}
+ ],
+ "requires": ["core"],
+ "resources": {"names": []}
+}

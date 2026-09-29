@@ -1,0 +1,27 @@
+# build outputs
+mods/*/out/
+*.work/
+__pycache__/
+*.pyc
+
+# built mods and firmwares
+*.elemod
+*.syx
+*.syx.json
+*.syx.map.json
+
+# firmware and anything derived from it: never commit (see NOTICE.md)
+*.snap
+*.bin
+!mods/custom-splash/splash.bin
+section_*.bin
+main_os.bin
+plusdrive.img
+firmware/
+snapshots/
+
+# editor / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
