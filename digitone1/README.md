@@ -1,9 +1,9 @@
 # Digitone mk1 / Digitone Keys (OS 1.43)
 
-The same four splash mods, ported to the **Digitone mk1 and Digitone Keys**
-(one OS file serves both), built for elekloader's `core-dn1`. The panel is the
-same 128x64 mono screen, so the graphics and the panel format are identical to
-the Digitakt's — only the firmware addresses differ.
+The same splash mods, ported to the **Digitone mk1 and Digitone Keys** (one OS
+file serves both), built for elekloader's `core-dn1`, plus the generated
+example. The panel is the same 128x64 mono screen, so the graphics and the panel
+format are identical to the Digitakt's — only the firmware addresses differ.
 
 ![DigiTussy on the Digitone](../screenshots/digitussy-dn1.gif)
 
@@ -13,9 +13,11 @@ the Digitakt's — only the firmware addresses differ.
 | [`rare-splash`](mods/rare-splash) | boots the alternate stock animation, the one the unseeded selector never reaches |
 | [`digitussy`](mods/digitussy) | animated wordmark + rising particles |
 | [`digitrash`](mods/digitrash) | animated wordmark, trash can and flies |
+| [`aba-bootanim`](mods/aba-bootanim) | example animated GIF from `make-bootanim` |
 
-As on the Digitakt, `digitussy`, `digitrash` and `rare-splash` overlap, so
-install **one** of them; `custom-splash` combines with either.
+As on the Digitakt, the draw mods (`custom-splash`, `digitussy`, `digitrash` and
+`aba-bootanim`) hook the same present sites, so install **one** of them;
+`rare-splash` patches a different instruction and combines with any of them.
 
 ## Digitone addresses (OS 1.43)
 

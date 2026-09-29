@@ -45,6 +45,7 @@ python -m elekloader.sdk.build ../digitakt-splash-mods/mods/rare-splash  --stock
 python -m elekloader.sdk.build ../digitakt-splash-mods/mods/custom-splash --stock Digitakt_OS1.53.syx
 python -m elekloader.sdk.build ../digitakt-splash-mods/mods/digitussy    --stock Digitakt_OS1.53.syx
 python -m elekloader.sdk.build ../digitakt-splash-mods/mods/digitrash    --stock Digitakt_OS1.53.syx
+python -m elekloader.sdk.build ../digitakt-splash-mods/mods/aba-bootanim --stock Digitakt_OS1.53.syx
 ```
 
 Expect:

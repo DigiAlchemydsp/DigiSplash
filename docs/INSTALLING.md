@@ -31,13 +31,16 @@ cannot live together.
 | can be installed with | and |
 |---|---|
 | `core` | always required |
-| `custom-splash` | any other (non-conflicting) mod |
-| `digitussy` | anything **except** `digitrash` and `rare-splash` |
-| `digitrash` | anything **except** `digitussy` and `rare-splash` |
-| `rare-splash` | anything **except** `digitussy` and `digitrash` |
+| `custom-splash` | anything **except** the other draw mods (`digitussy`, `digitrash`, `aba-bootanim`) |
+| `digitussy` | anything **except** the other draw mods (`custom-splash`, `digitrash`, `aba-bootanim`) |
+| `digitrash` | anything **except** the other draw mods (`custom-splash`, `digitussy`, `aba-bootanim`) |
+| `aba-bootanim` | anything **except** the other draw mods (`custom-splash`, `digitussy`, `digitrash`) |
+| `rare-splash` | anything — it patches a different instruction and combines with the draw mods |
 
-`digitussy`, `digitrash` and `rare-splash` all patch `0x4006c2fa` or the
-intro's present calls, so they overlap; pick one splash.
+The **draw mods** — `custom-splash`, `digitussy`, `digitrash` and
+`aba-bootanim` — all hook the same intro present call sites, so install **one**
+of them. `rare-splash` patches the selector branch (`0x4006c2fa`) instead, so
+it combines with any of them (checked with `lint`).
 
 ## Flashing and recovery
 
