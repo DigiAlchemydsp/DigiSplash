@@ -69,6 +69,20 @@ python -m elekloader.patch --stock Digitone_and_Digitone_Keys_OS1.43.syx \
 so does `custom-splash` (assembly). **Only `rare-splash` builds without a
 toolchain** (it has no sources).
 
+## Make your own from a PNG or GIF
+
+[`tools/make-bootanim/`](tools/make-bootanim) turns an image or an animated GIF
+into a ready-to-build splash mod (a multi-frame animation, or a single frame):
+
+```sh
+tools\make-bootanim\make-bootanim.bat hamster.gif
+tools\make-bootanim\make-bootanim.bat logo.png --name "My logo" --dn
+```
+
+It writes the mod folder (frames, `splash.s`, `mod.json`); build and install
+it with elekloader as above. See
+[tools/make-bootanim/README.md](tools/make-bootanim/README.md).
+
 ## Documentation
 
 | | |
@@ -86,6 +100,7 @@ toolchain** (it has no sources).
 mods/<id>/                Digitakt mk1 mods (elekloader format 2)
 digitone1/mods/<id>/      Digitone mk1 / Keys mods
 mods/<id>/*.s,*.c         sources;  out/ is build output (gitignored)
+tools/make-bootanim/      PNG/GIF -> splash mod generator
 screenshots/              captured in digiemu
 docs/                     the guides above
 ```
