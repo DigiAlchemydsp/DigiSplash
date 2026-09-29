@@ -121,18 +121,24 @@ Then capture the intro with the helper scripts (below), e.g. Digitone:
 
 (Digitakt defaults: `0x4020d8f8`, `0x400e60ea`, `0x400e606c`, `0x4006cb94`.)
 
-## Helper scripts (scratch, not in the repo)
+## Helper scripts
 
-In `C:\Users\benan\Music\ELEKTRON\dt1-splash`:
+Merged into the repo under `tools/re/` (see
+[tools/re/README.md](tools/re/README.md)); they import a digiemu or elekloader
+checkout via `DIGIEMU_DIR` / `ELEKLOADER_DIR`, or a checkout kept next to this
+repo.
 
 | script | what |
 |---|---|
-| `dt1.py` | capstone m68k disassembler + hex/word dumps; set `DT1_IMG` to the extracted main OS (`disas`, `hex`, `word`, `render`) |
-| `capture_splash.py` | resume a snapshot, deliver PIT3, capture the panel frame at the present body to PNGs (parameterised per device) |
+| `dt1.py` | capstone m68k disassembler + hex/word dumps; `DT1_IMG` sets the image |
+| `capture_splash.py` | resume a snapshot, deliver PIT3, capture the panel frame at the present body to PNGs (per-device addresses) |
 | `cold_capture.py` | cold-boot capture (polls the panel buffer) |
 | `capture_intro.py` | capture at the PIT3 ISR |
-| `mksplash.py` | PNG -> panel bytes (copy lives in the repo under custom-splash) |
-| `patch.py` | standalone patch script for the Digitakt (predates the repo) |
+| `patch.py` | standalone Digitakt `rare`/`reveal` patcher (the mods are preferred) |
+
+The older scratch copies and the firmware/test artifacts live in
+`C:\Users\benan\Music\ELEKTRON\dt1-splash` (not in the repo; they include
+extracted sections, `.syx` scratch builds and emulator homes).
 
 Extract a main OS for analysis with `elekloader.syx.Syx(<stock>).section(3)`.
 

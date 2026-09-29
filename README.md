@@ -78,6 +78,9 @@ toolchain** (it has no sources).
 [`tools/make-bootanim/`](tools/make-bootanim) turns an image or an animated GIF
 into a ready-to-build splash mod (a multi-frame animation, or a single frame):
 
+![generated from a GIF](screenshots/bootanim-example.gif)
+![aba on the Digitone](screenshots/aba-dn1.gif)
+
 ```sh
 tools\make-bootanim\make-bootanim.bat hamster.gif
 tools\make-bootanim\make-bootanim.bat logo.png --name "My logo" --dn
@@ -99,6 +102,7 @@ it with elekloader as above. See
 | [docs/PANEL-FORMAT.md](docs/PANEL-FORMAT.md) | the 128x64 1bpp panel layout and how to make art for it |
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | how the intro selects and presents, and where each mod hooks |
 | [digitone1/README.md](digitone1/README.md) | the Digitone addresses and build/install commands |
+| [tools/re/README.md](tools/re/README.md) | reverse-engineering and capture instruments |
 | [NOTICE.md](NOTICE.md) | licence and the independence statement |
 
 ## Layout
@@ -108,6 +112,7 @@ mods/<id>/                Digitakt mk1 mods (elekloader format 2)
 digitone1/mods/<id>/      Digitone mk1 / Keys mods
 mods/<id>/*.s,*.c         sources;  out/ is build output (gitignored)
 tools/make-bootanim/      PNG/GIF -> splash mod generator
+tools/re/                 reverse-engineering and capture instruments
 screenshots/              captured in digiemu
 docs/                     the guides above
 ```

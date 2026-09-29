@@ -23,6 +23,11 @@ plusdrive.img
 firmware/
 snapshots/
 
+# local scratch inputs (source images, emulator captures, firmware homes)
+Source Img/
+frames-*/
+home-*/
+
 # editor / OS
 .vscode/
 .idea/
