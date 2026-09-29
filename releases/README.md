@@ -13,7 +13,6 @@ every mod: `DigiSplash-1.0-digitakt-mk1.zip` and
 
 | mod | what |
 |---|---|
-| `custom-splash` | draws your own image (replace `splash.bin` and rebuild; here it is the demo) |
 | `rare-splash` | the alternate stock boot animation, the one the unseeded selector never reaches |
 | `digitussy` | animated wordmark + rising particles |
 | `digitrash` | animated wordmark, trash can and six flies |
@@ -26,7 +25,6 @@ every mod: `DigiSplash-1.0-digitakt-mk1.zip` and
 
 A rendered screenshot of each (in [`screenshots/`](screenshots)):
 
-![custom-splash](screenshots/custom-splash.png)
 ![rare-splash](screenshots/rare-splash.gif)
 ![digitussy](screenshots/digitussy.gif)
 ![digitrash](screenshots/digitrash.gif)

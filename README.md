@@ -12,7 +12,6 @@ combined with other non-conflicting mods. No Elektron firmware is included.
 
 | mod | what it does | sources |
 |---|---|---|
-| [`custom-splash`](mods/custom-splash) | draws **your own 128x64 image** as the splash; `mksplash.py` converts a PNG to the panel format | asm |
 | [`rare-splash`](mods/rare-splash) | boots on the **alternate** stock animation, the one the unseeded selector never reaches | 1 instruction |
 | [`digitussy`](mods/digitussy) | animated: the **DIGITUSSY** wordmark bobbing over rising particles | C + asm |
 | [`digitrash`](mods/digitrash) | animated: the **DIGITRASH** wordmark and a trash can with six flying flies | C + asm |
@@ -33,7 +32,6 @@ format are identical.
 
 | mod | |
 |---|---|
-| [`digitone1/mods/custom-splash`](digitone1/mods/custom-splash) | your own image |
 | [`digitone1/mods/rare-splash`](digitone1/mods/rare-splash) | the alternate stock animation |
 | [`digitone1/mods/digitussy`](digitone1/mods/digitussy) | animated wordmark + particles |
 | [`digitone1/mods/digitrash`](digitone1/mods/digitrash) | animated wordmark + flies |
@@ -41,9 +39,9 @@ format are identical.
 
 ## Conflicts
 
-`custom-splash`, `digitussy`, `digitrash` and `aba-bootanim` draw over the
-intro; `rare-splash` changes which stock animation runs. The four draw mods hook
-the same present sites, so install **one** of them; `rare-splash` patches a
+`digitussy`, `digitrash` and `aba-bootanim` draw over the intro;
+`rare-splash` changes which stock animation runs. The three draw mods hook the
+same present sites, so install **one** of them; `rare-splash` patches a
 different instruction and combines with any of them. The same rule holds within
 each device section (a Digitakt mod and a Digitone mod are never combined — they
 target different OS files).
@@ -51,10 +49,9 @@ target different OS files).
 ## Releases
 
 Prebuilt `.elemod` files for every splash are in [`releases/`](releases):
-`releases/dt/` for the Digitakt and `releases/dn/` for the Digitone, 14 each.
+`releases/dt/` for the Digitakt and `releases/dn/` for the Digitone, 13 each.
 Install one draw mod at a time — see [releases/README.md](releases/README.md).
 
-![custom-splash](releases/screenshots/custom-splash.png)
 ![rare-splash](releases/screenshots/rare-splash.gif)
 ![digitussy](releases/screenshots/digitussy.gif)
 ![digitrash](releases/screenshots/digitrash.gif)
@@ -84,9 +81,8 @@ python -m elekloader.patch --stock Digitone_and_Digitone_Keys_OS1.43.syx \
     --out digitussy-dn1.syx --version 2.0s
 ```
 
-`digitussy` and `digitrash` need the m68k toolchain (they have C sources);
-so does `custom-splash` (assembly). **Only `rare-splash` builds without a
-toolchain** (it has no sources).
+`digitussy`, `digitrash` and the generated bootanims need the m68k toolchain
+(C and assembly); **`rare-splash` has no sources and builds without it**.
 
 ## Make your own from a PNG or GIF
 

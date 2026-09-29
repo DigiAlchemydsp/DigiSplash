@@ -17,7 +17,7 @@ The mods' own code and the tools here are **GPL-2.0-or-later** (see
 
 ## Screenshots
 
-- `screenshots/digitussy.gif`, `digitrash.gif`, `custom-splash.png` show
+- `screenshots/digitussy.gif`, `digitrash.gif` show
   **this project's own graphics**, rendered by the firmware in the emulator.
 - `screenshots/usual-vs-rare.png`, `usual-splash.gif` and `rare-splash.gif`
   are captures of the **device's own** boot animation (the one in stock OS

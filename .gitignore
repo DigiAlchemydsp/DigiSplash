@@ -14,8 +14,6 @@ __pycache__/
 # firmware and anything derived from it: never commit (see NOTICE.md)
 *.snap
 *.bin
-!mods/custom-splash/splash.bin
-!digitone1/mods/custom-splash/splash.bin
 !mods/*-bootanim/frames.bin
 !digitone1/mods/*-bootanim/frames.bin
 section_*.bin

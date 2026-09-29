@@ -20,19 +20,20 @@ buf[(7 - (y >> 3)) + (x << 3)] &= ~(1u << (y & 7)); /* clear */
 
 ## PNG → panel bytes
 
-`mods/custom-splash/mksplash.py` does the conversion:
+[`tools/make-bootanim`](../tools/make-bootanim) is the converter: it fits the
+image (or every GIF frame) to 128×64, thresholds at 128 or dithers, packs each
+frame, and writes the mod's `frames.bin` (the raw panel bytes, one 1024-byte
+frame after another).
 
 ```sh
-python mksplash.py logo.png splash.bin
-python mksplash.py --text "HELLO" splash.bin          # no input file
-python mksplash.py logo.png splash.bin --dither       # Floyd–Steinberg
-python mksplash.py logo.png splash.bin --invert       # swap ink and paper
-python mksplash.py logo.png splash.s --asm            # .byte block instead
+tools\make-bootanim\make-bootanim.bat logo.png
+tools\make-bootanim\make-bootanim.bat anim.gif --frames 40
+tools\make-bootanim\make-bootanim.bat logo.png --invert --dither
 ```
 
-It fits the image to 128×64 preserving aspect, thresholds at 128 (or dithers),
-packs the bytes, and prints an ASCII preview. It needs Pillow
-(`pip install pillow`).
+It needs Python 3 with Pillow (`pip install pillow`). The `frames.bin` it
+writes is exactly the bytes a mod copies to the panel, so a hand-written mod
+can `.incbin` it too.
 
 Design notes:
 
@@ -40,8 +41,6 @@ Design notes:
   converted as-is; invert only if your source is white-on-black.
 - Avoid 1-pixel detail — it dithers into noise. Bold shapes and 5×7-ish text
   read best.
-- `--asm` output is handy when you want the bytes as a `.byte` block inside a
-  source file rather than an `.incbin`ed `splash.bin`.
 
 ## Drawing from code
 

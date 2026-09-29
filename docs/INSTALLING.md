@@ -31,16 +31,16 @@ cannot live together.
 | can be installed with | and |
 |---|---|
 | `core` | always required |
-| `custom-splash` | anything **except** the other draw mods (`digitussy`, `digitrash`, `aba-bootanim`) |
-| `digitussy` | anything **except** the other draw mods (`custom-splash`, `digitrash`, `aba-bootanim`) |
-| `digitrash` | anything **except** the other draw mods (`custom-splash`, `digitussy`, `aba-bootanim`) |
-| `aba-bootanim` | anything **except** the other draw mods (`custom-splash`, `digitussy`, `digitrash`) |
+| `digitussy` | anything **except** the other draw mods (`digitrash`, `aba-bootanim`) |
+| `digitrash` | anything **except** the other draw mods (`digitussy`, `aba-bootanim`) |
+| `aba-bootanim` | anything **except** the other draw mods (`digitussy`, `digitrash`) |
 | `rare-splash` | anything — it patches a different instruction and combines with the draw mods |
 
-The **draw mods** — `custom-splash`, `digitussy`, `digitrash` and
-`aba-bootanim` — all hook the same intro present call sites, so install **one**
-of them. `rare-splash` patches the selector branch (`0x4006c2fa`) instead, so
-it combines with any of them (checked with `lint`).
+The **draw mods** — `digitussy`, `digitrash` and `aba-bootanim` — all hook the
+same intro present call sites, so install **one** of them. `rare-splash` patches
+the selector branch (`0x4006c2fa`) instead, so it combines with any of them
+(checked with `lint`). A bootanim you generate with
+[`../tools/make-bootanim`](../tools/make-bootanim) is a draw mod too.
 
 ## Flashing and recovery
 
@@ -51,19 +51,23 @@ it combines with any of them (checked with `lint`).
   file.
 - Only the main OS section changes, so the bootstrap and updater stay stock.
 
-## Changing the custom-splash image
+## Making your own
 
-`custom-splash` draws `mods/custom-splash/splash.bin`. Replace it and rebuild:
+Generate a splash mod from a PNG or GIF with
+[`tools/make-bootanim`](../tools/make-bootanim), then build and patch it:
 
 ```sh
-python mksplash.py your-logo.png splash.bin     # see docs/PANEL-FORMAT.md
+tools\make-bootanim\make-bootanim.bat your-logo.png --name "My logo"
 cd elekloader
-python -m elekloader.sdk.build ../digitakt-splash-mods/mods/custom-splash --stock Digitakt_OS1.53.syx
+python -m elekloader.sdk.build ../digitakt-splash-mods/my-logo-bootanim --stock Digitakt_OS1.53.syx
 python -m elekloader.patch --stock Digitakt_OS1.53.syx \
     --mod mods/core/out/core-2.1.elemod \
-    --mod ../digitakt-splash-mods/mods/custom-splash/out/custom-splash-1.0.elemod \
+    --mod ../digitakt-splash-mods/my-logo-bootanim/out/my-logo-1.0.elemod \
     --out custom.syx --version 2.0c
 ```
+
+See [tools/make-bootanim/README.md](../tools/make-bootanim/README.md) and
+[docs/PANEL-FORMAT.md](PANEL-FORMAT.md).
 
 ## Verifying a build without hardware
 

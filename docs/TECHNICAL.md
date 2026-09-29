@@ -65,7 +65,7 @@ falls through to the alternate animation:
 
 No sources, so it builds without a toolchain.
 
-## `custom-splash`, `digitussy`, `digitrash`
+## The draw mods: `digitussy`, `digitrash`, `aba-bootanim`
 
 These draw over each composed frame at the intro's **present call sites** and
 then run the stock present:
@@ -76,21 +76,23 @@ then run the stock present:
 | `0x400e6064` | `0x4006c3a4`, `0x4006c85c`, `0x4006cb60` |
 
 Each new `stub` (`jsr <draw>` then `jmp <stock present>`) keeps the stock
-present functions intact.
+present functions intact. A bootanim you generate with
+[`../tools/make-bootanim`](../tools/make-bootanim) is the same shape: it cycles
+frames from `frames.bin` at those sites.
 
-**Why the call sites, not the present entry.** An earlier version of
-`custom-splash` redirected `0x400e60e2` itself (`op: jmp`). That works on
-hardware, but it changes bytes the emulator's symbol scan uses to find
-`panel_diff` and `fb_front`, so digiemu could no longer resolve the panel and
-its firmware check reported "did not reach a live UI". Hooking the intro's own
-call sites leaves those signatures intact, so a build can still be checked in
-the emulator.
+**Why the call sites, not the present entry.** An earlier version redirected
+`0x400e60e2` itself (`op: jmp`). That works on hardware, but it changes bytes
+the emulator's symbol scan uses to find `panel_diff` and `fb_front`, so digiemu
+could no longer resolve the panel and its firmware check reported "did not
+reach a live UI". Hooking the intro's own call sites leaves those signatures
+intact, so a build can still be checked in the emulator.
 
-`custom-splash` ships a fixed 1024-byte `splash.bin`; the two animated mods
-compute each frame from a small C renderer (a 5×7 font, an LCG, particles /
-flies). See [PANEL-FORMAT.md](PANEL-FORMAT.md).
+`aba-bootanim` (and every generated bootanim) copies its next 1024-byte frame
+from `frames.bin`; `digitussy` and `digitrash` compute each frame from a small C
+renderer (a 5×7 font, an LCG, particles / flies). See
+[PANEL-FORMAT.md](PANEL-FORMAT.md).
 
-All three gate on `0x40000340 == 0x4006c154` (the intro still owning PIT3), so
+All of them gate on `0x40000340 == 0x4006c154` (the intro still owning PIT3), so
 nothing is drawn over the user interface.
 
 ## Digitone mk1 / Digitone Keys (OS 1.43)

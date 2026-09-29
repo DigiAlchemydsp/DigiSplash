@@ -19,27 +19,26 @@ screenshots/              captures from digiemu
 NOTICE.md, LICENSE        independence statement; GPL-2.0
 ```
 
-Committed mods: `custom-splash`, `rare-splash`, `digitussy`, `digitrash`, and
-the generated example `aba-bootanim` (both devices). `tools/make-bootanim/aba.gif`
-is the source the example was made from.
+Committed mods: `rare-splash`, `digitussy`, `digitrash`, the generated example
+`aba-bootanim`, and generated bootanims for the source images (both devices);
+`tools/make-bootanim` makes new ones.
 
 ## What each mod is
 
 | mod | mechanism |
 |---|---|
-| `custom-splash` | copies a fixed 1024-byte `splash.bin` over each composed intro frame |
 | `rare-splash` | NOPs the selector branch so the alternate stock animation runs (1 instruction) |
 | `digitussy` | `render.c`: bobbing wordmark + rising particles, drawn every frame |
 | `digitrash` | `render.c`: wordmark + trash can + six wandering flies |
-| `aba-bootanim` | generated: cycles N frames from `frames.bin` |
+| `aba-bootanim` and the other `*-bootanim` | generated: cycles N frames from `frames.bin` |
 
-The **draw mods** (`custom-splash`, `digitussy`, `digitrash`, `aba-bootanim`)
-all hook the same intro present call sites, so they are mutually exclusive.
-**`rare-splash` patches a different instruction and combines with any of them**
-— but a draw mod paints the whole frame, so when combined `rare-splash` is
-composed and then overwritten: it is invisible. Install `rare-splash` alone to
-see the alternate stock animation. (Verified: `rare-splash + digitussy` lints
-OK; `digitussy + custom-splash` overlaps.)
+The **draw mods** (`digitussy`, `digitrash`, `aba-bootanim` and every generated
+bootanim) all hook the same intro present call sites, so they are mutually
+exclusive. **`rare-splash` patches a different instruction and combines with any
+of them** — but a draw mod paints the whole frame, so when combined
+`rare-splash` is composed and then overwritten: it is invisible. Install
+`rare-splash` alone to see the alternate stock animation. (Verified:
+`rare-splash + digitussy` lints OK; `digitussy + digitrash` overlaps.)
 
 ## Firmware addresses
 
@@ -161,10 +160,10 @@ Extract a main OS for analysis with `elekloader.syx.Syx(<stock>).section(3)`.
 
 Tested:
 
-- Digitakt: `digitussy`/`digitrash`/`custom-splash`/`rare-splash` build and
+- Digitakt: `digitussy`/`digitrash`/`rare-splash` and the bootanims build and
   lint; `digitussy`/`digitrash` cold-boot to a live UI in digiemu and their
   intro frames were captured.
-- Digitone: all four build and lint against `core-dn1` 2.0a; `digitussy` and
+- Digitone: the mods build and lint against `core-dn1` 2.0a; `digitussy` and
   the generated `aba` build cold-boot to a live UI with the FM DSP running
   (`dsp_running_u32=0x2`), and their frames were captured.
 - `tools/make-bootanim`: a 6-frame GIF builds/lints/patches for the Digitakt

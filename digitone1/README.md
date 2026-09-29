@@ -9,13 +9,12 @@ format are identical to the Digitakt's — only the firmware addresses differ.
 
 | mod | what it does |
 |---|---|
-| [`custom-splash`](mods/custom-splash) | draws your own 128x64 image (`mksplash.py`) |
 | [`rare-splash`](mods/rare-splash) | boots the alternate stock animation, the one the unseeded selector never reaches |
 | [`digitussy`](mods/digitussy) | animated wordmark + rising particles |
 | [`digitrash`](mods/digitrash) | animated wordmark, trash can and flies |
 | [`aba-bootanim`](mods/aba-bootanim) | example animated GIF from `make-bootanim` |
 
-As on the Digitakt, the draw mods (`custom-splash`, `digitussy`, `digitrash` and
+As on the Digitakt, the draw mods (`digitussy`, `digitrash` and
 `aba-bootanim`) hook the same present sites, so install **one** of them;
 `rare-splash` patches a different instruction and combines with any of them.
 
