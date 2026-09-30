@@ -6,8 +6,9 @@ mk1 / Digitone Keys** (OS 1.43), built for
 change only the main OS section, need the matching `core` mod, and can be
 combined with other non-conflicting mods. No Elektron firmware is included.
 
-![DigiTussy](screenshots/digitussy.gif)
-![DigiTrash](screenshots/digitrash.gif)
+![rare-splash](releases/screenshots/rare-splash.gif)
+![aba-bootanim](releases/screenshots/aba-bootanim.gif)
+![match](releases/screenshots/match.gif)
 
 ## Digitakt mk1 (OS 1.53)
 
