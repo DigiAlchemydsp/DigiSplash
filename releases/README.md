@@ -1,6 +1,6 @@
 # releases
 
-Prebuilt splash mods — **only `.elemod` files**, one per splash, in both
+Prebuilt boot-splash mods — **only `.elemod` files**, one per splash, in both
 device variants:
 
 - `dt/` — Digitakt mk1, OS 1.53 (needs `core`, e.g. `core-2.1.elemod`)
@@ -9,12 +9,10 @@ device variants:
 
 Each device is also packaged as a zip:
 
-- `DigiSplash-1.0-<device>.zip` — the full set, with sources
+- `DigiSplash-1.1-<device>.zip` — the twelve splashes below, **elemods only**
+  (`elemods/` + README + LICENSE).
+- `DigiSplash-1.0-<device>.zip` — the earlier full package, with sources
   (`elemods/` + `sources/` + README + LICENSE).
-- `DigiSplash-1.1-<device>.zip` — the twelve-featured release, **elemods only**
-  (`elemods/` + README + LICENSE): `rare-splash`, `digitussy`, `digitrash`,
-  `aba-bootanim`, `reach`, `claw`, `tidemoon`, `vinyl`, `match`, `bzme`,
-  `tussy`, `loox`.
 
 | mod | what |
 |---|---|
@@ -22,48 +20,34 @@ Each device is also packaged as a zip:
 | `digitussy` | animated wordmark + rising particles |
 | `digitrash` | animated wordmark, trash can and six flies |
 | `aba-bootanim` | the `aba.gif` example animation |
-| `beep`, `catbooting`, `catscan`, `discover`, `experience`, `mount`, `pfft`, `planet1` | generated splashes from the source images |
-| `loop` | the animated GIF (`c8aabc53….gif`), 40 frames |
-| `milkyway`, `kofight`, `horror` | animated GIFs (`o7o4p1bwd01b1`, `4rr4lhq45rb81` and `HORROR`), 40, 60 and 48 frames |
-| `majestic`, `loox`, `tussy` | animated GIFs (`zs00wgb204te1`, `1_CqtKSeLhUEUfiXsnYMqfbQ` and `Primp`), 32, 35 and 59 frames |
+| `loox` | animated GIF (`1_CqtKSeLhUEUfiXsnYMqfbQ`), 35 frames |
+| `tussy` | animated GIF (`Primp`), 59 frames |
 | `bzme` | the animated GIF `bzme.gif`, 14 frames |
-| `reach`, `claw`, `tidemoon` | animated GIFs (`0efb8c5f…`, `b6906df9…` and `Qd87v2`), 18, 18 and 60 frames |
-| `vinyl`, `match` | animated GIFs (`tumblr_1edd57ba…` and `tumblr_n8ggiog…`), 24 and 41 frames |
+| `reach` | animated GIF (`0efb8c5f…`), 18 frames |
+| `claw` | animated GIF (`b6906df9…`), 18 frames |
+| `tidemoon` | animated GIF (`Qd87v2`), 60 frames |
+| `vinyl` | animated GIF (`tumblr_1edd57ba…`), 24 frames |
+| `match` | animated GIF (`tumblr_n8ggiog…`), 41 frames |
 
-`catbooting`, `catscan`, `mount`, … are static (one frame); `loop`, `milkyway`,
-`kofight`, `horror`, `majestic`, `loox`, `tussy`, `bzme`, `reach`, `claw`,
-`tidemoon`, `vinyl`, `match` and the `digitussy`/`digitrash`/`aba-bootanim`
-ones animate.
+Every mod except `rare-splash` is a **draw mod** and animates;
+`rare-splash` switches which stock animation runs.
 
-A rendered screenshot of each (in [`screenshots/`](screenshots)); `reach`,
-`claw`, `tidemoon`, `vinyl` and `match` are captured from the emulator
-(digiemu), one full animation cycle each:
+A screenshot of each (in [`screenshots/`](screenshots)); `reach`, `claw`,
+`tidemoon`, `vinyl` and `match` are captured from the emulator (digiemu), one
+full animation cycle each:
 
+![rare-splash](screenshots/rare-splash.gif)
+![digitussy](screenshots/digitussy.gif)
+![digitrash](screenshots/digitrash.gif)
+![aba](screenshots/aba-bootanim.gif)
+![loox](screenshots/loox.gif)
+![tussy](screenshots/tussy.gif)
+![bzme](screenshots/bzme.gif)
 ![reach](screenshots/reach.gif)
 ![claw](screenshots/claw.gif)
 ![tidemoon](screenshots/tidemoon.gif)
 ![vinyl](screenshots/vinyl.gif)
 ![match](screenshots/match.gif)
-![rare-splash](screenshots/rare-splash.gif)
-![digitussy](screenshots/digitussy.gif)
-![digitrash](screenshots/digitrash.gif)
-![aba](screenshots/aba-bootanim.gif)
-![beep](screenshots/beep.png)
-![catbooting](screenshots/catbooting.png)
-![catscan](screenshots/catscan.png)
-![discover](screenshots/discover.png)
-![experience](screenshots/experience.png)
-![mount](screenshots/mount.png)
-![pfft](screenshots/pfft.png)
-![planet1](screenshots/planet1.png)
-![loop](screenshots/loop.gif)
-![milkyway](screenshots/milkyway.gif)
-![kofight](screenshots/kofight.gif)
-![horror](screenshots/horror.gif)
-![majestic](screenshots/majestic.gif)
-![loox](screenshots/loox.gif)
-![tussy](screenshots/tussy.gif)
-![bzme](screenshots/bzme.gif)
 
 ## Install
 
@@ -72,11 +56,11 @@ With elekloader:
 ```sh
 python -m elekloader.patch --stock Digitakt_OS1.53.syx \
     --mod mods/core/out/core-2.1.elemod \
-    --mod releases/dt/mount.elemod --out mount.syx --version 2.0x
+    --mod releases/dt/digitussy.elemod --out digitussy.syx --version 2.0x
 
 python -m elekloader.patch --stock Digitone_and_Digitone_Keys_OS1.43.syx \
     --mod mods/core-dn1/out/core-dn1-2.0a.elemod \
-    --mod releases/dn/mount.elemod --out mount-dn.syx --version 2.0x
+    --mod releases/dn/digitussy.elemod --out digitussy-dn.syx --version 2.0x
 ```
 
 Or drop the `.elemod` into the loader window (Install from file) together with

@@ -49,19 +49,22 @@ target different OS files).
 
 ## Releases
 
-Prebuilt `.elemod` files for every splash are in [`releases/`](releases):
-`releases/dt/` for the Digitakt and `releases/dn/` for the Digitone, 25 each.
+The **DigiSplash 1.1** release is twelve splashes, in [`releases/`](releases)
+(`dt/` for the Digitakt, `dn/` for the Digitone) and as elemods-only zips.
 Install one draw mod at a time — see [releases/README.md](releases/README.md).
 
 ![rare-splash](releases/screenshots/rare-splash.gif)
 ![digitussy](releases/screenshots/digitussy.gif)
 ![digitrash](releases/screenshots/digitrash.gif)
 ![aba](releases/screenshots/aba-bootanim.gif)
-
-The rest (`beep`, `catbooting`, `catscan`, `discover`, `experience`, `mount`,
-`pfft`, `planet1`, `loop`, `milkyway`, `kofight`, `horror`, `majestic`, `loox`,
-`tussy`, `bzme`, `reach`, `claw`, `tidemoon`, `vinyl`, `match`) are shown in
-[releases/README.md](releases/README.md).
+![loox](releases/screenshots/loox.gif)
+![tussy](releases/screenshots/tussy.gif)
+![bzme](releases/screenshots/bzme.gif)
+![reach](releases/screenshots/reach.gif)
+![claw](releases/screenshots/claw.gif)
+![tidemoon](releases/screenshots/tidemoon.gif)
+![vinyl](releases/screenshots/vinyl.gif)
+![match](releases/screenshots/match.gif)
 
 ## Quick start
 
