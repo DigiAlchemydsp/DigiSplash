@@ -1,0 +1,64 @@
+{
+ "id": "match",
+ "version": "1.0",
+ "title": "match",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "description": "Boot animation generated from tumblr_n8ggiogZGX1rmhormo1_1280.gif (41 frames). Drawn over the intro panel while it is live.",
+ "device": "digitakt-mk1",
+ "os": "1.53",
+ "sources": [
+  "splash.s"
+ ],
+ "sites": [
+  {
+   "addr": "0x4006c2d0",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "match_diff"
+  },
+  {
+   "addr": "0x4006c3ac",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "match_diff"
+  },
+  {
+   "addr": "0x4006c864",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "match_diff"
+  },
+  {
+   "addr": "0x4006cb68",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "match_diff"
+  },
+  {
+   "addr": "0x4006c3a4",
+   "stock": "4eb9400e6064",
+   "op": "jsr",
+   "target": "match_flush"
+  },
+  {
+   "addr": "0x4006c85c",
+   "stock": "4eb9400e6064",
+   "op": "jsr",
+   "target": "match_flush"
+  },
+  {
+   "addr": "0x4006cb60",
+   "stock": "4eb9400e6064",
+   "op": "jsr",
+   "target": "match_flush"
+  }
+ ],
+ "requires": [
+  "core"
+ ],
+ "resources": {
+  "names": []
+ }
+}

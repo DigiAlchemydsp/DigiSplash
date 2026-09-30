@@ -50,7 +50,7 @@ target different OS files).
 ## Releases
 
 Prebuilt `.elemod` files for every splash are in [`releases/`](releases):
-`releases/dt/` for the Digitakt and `releases/dn/` for the Digitone, 13 each.
+`releases/dt/` for the Digitakt and `releases/dn/` for the Digitone, 25 each.
 Install one draw mod at a time — see [releases/README.md](releases/README.md).
 
 ![rare-splash](releases/screenshots/rare-splash.gif)
@@ -59,7 +59,9 @@ Install one draw mod at a time — see [releases/README.md](releases/README.md).
 ![aba](releases/screenshots/aba-bootanim.gif)
 
 The rest (`beep`, `catbooting`, `catscan`, `discover`, `experience`, `mount`,
-`pfft`, `planet1`, `loop`) are shown in [releases/README.md](releases/README.md).
+`pfft`, `planet1`, `loop`, `milkyway`, `kofight`, `horror`, `majestic`, `loox`,
+`tussy`, `bzme`, `reach`, `claw`, `tidemoon`, `vinyl`, `match`) are shown in
+[releases/README.md](releases/README.md).
 
 ## Quick start
 

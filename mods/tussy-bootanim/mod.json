@@ -1,0 +1,64 @@
+{
+ "id": "tussy",
+ "version": "1.0",
+ "title": "Tussy",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "description": "Boot animation generated from Primp.gif (59 frames). Drawn over the intro panel while it is live.",
+ "device": "digitakt-mk1",
+ "os": "1.53",
+ "sources": [
+  "splash.s"
+ ],
+ "sites": [
+  {
+   "addr": "0x4006c2d0",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "tussy_diff"
+  },
+  {
+   "addr": "0x4006c3ac",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "tussy_diff"
+  },
+  {
+   "addr": "0x4006c864",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "tussy_diff"
+  },
+  {
+   "addr": "0x4006cb68",
+   "stock": "4eb9400e60e2",
+   "op": "jsr",
+   "target": "tussy_diff"
+  },
+  {
+   "addr": "0x4006c3a4",
+   "stock": "4eb9400e6064",
+   "op": "jsr",
+   "target": "tussy_flush"
+  },
+  {
+   "addr": "0x4006c85c",
+   "stock": "4eb9400e6064",
+   "op": "jsr",
+   "target": "tussy_flush"
+  },
+  {
+   "addr": "0x4006cb60",
+   "stock": "4eb9400e6064",
+   "op": "jsr",
+   "target": "tussy_flush"
+  }
+ ],
+ "requires": [
+  "core"
+ ],
+ "resources": {
+  "names": []
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "tidemoon",
+ "version": "1.0",
+ "title": "tidemoon",
+ "category": "Boot",
+ "author": "make-bootanim",
+ "license": "GPL-2.0-or-later",
+ "description": "Boot animation generated from tidemoon.gif (60 frames). Drawn over the intro panel while it is live.",
+ "device": "digitone-mk1",
+ "os": "1.43",
+ "sources": [
+  "splash.s"
+ ],
+ "sites": [
+  {
+   "addr": "0x40090e58",
+   "stock": "4eb9400f8efa",
+   "op": "jsr",
+   "target": "tidemoon_diff"
+  },
+  {
+   "addr": "0x40091000",
+   "stock": "4eb9400f8efa",
+   "op": "jsr",
+   "target": "tidemoon_diff"
+  },
+  {
+   "addr": "0x4009130a",
+   "stock": "4eb9400f8efa",
+   "op": "jsr",
+   "target": "tidemoon_diff"
+  },
+  {
+   "addr": "0x400917bc",
+   "stock": "4eb9400f8efa",
+   "op": "jsr",
+   "target": "tidemoon_diff"
+  },
+  {
+   "addr": "0x40091ac0",
+   "stock": "4eb9400f8efa",
+   "op": "jsr",
+   "target": "tidemoon_diff"
+  },
+  {
+   "addr": "0x40090ff8",
+   "stock": "4eb9400f8e7c",
+   "op": "jsr",
+   "target": "tidemoon_flush"
+  },
+  {
+   "addr": "0x40091302",
+   "stock": "4eb9400f8e7c",
+   "op": "jsr",
+   "target": "tidemoon_flush"
+  },
+  {
+   "addr": "0x400917b4",
+   "stock": "4eb9400f8e7c",
+   "op": "jsr",
+   "target": "tidemoon_flush"
+  },
+  {
+   "addr": "0x40091ab8",
+   "stock": "4eb9400f8e7c",
+   "op": "jsr",
+   "target": "tidemoon_flush"
+  }
+ ],
+ "requires": [
+  "core"
+ ],
+ "resources": {
+  "names": []
+ }
+}
