@@ -10,6 +10,9 @@ combined with other non-conflicting mods. No Elektron firmware is included.
 ![aba-bootanim](releases/screenshots/aba-bootanim.gif)
 ![match](releases/screenshots/match.gif)
 
+![DigiSplash running on a Digitakt and Digitone](screenshots/machines-1.jpg)
+![DigiSplash running on a Digitakt and Digitone](screenshots/machines-2.jpg)
+
 ## Digitakt mk1 (OS 1.53)
 
 | mod | what it does | sources |
