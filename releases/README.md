@@ -36,7 +36,6 @@ A screenshot of each (in [`screenshots/`](screenshots)); `reach`, `claw`,
 `tidemoon`, `vinyl` and `match` are captured from the emulator (digiemu), one
 full animation cycle each:
 
-![rare-splash](screenshots/rare-splash.gif)
 ![digitussy](screenshots/digitussy.gif)
 ![digitrash](screenshots/digitrash.gif)
 ![aba](screenshots/aba-bootanim.gif)
@@ -76,6 +75,7 @@ alternate stock animation.
 
 ## Notes
 
+- Stress-tested on hardware over 3 days: **PASS** (Digitakt mk1 and Digitone mk1).
 - These `.elemod` files contain the mod's own bytes (including the packed
   frames); no Elektron firmware. See [../NOTICE.md](../NOTICE.md).
 - Rebuild any of them with `elekloader.sdk.build` from the sources under

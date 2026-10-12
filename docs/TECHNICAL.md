@@ -7,15 +7,10 @@ decompressed section 3).
 ## The intro task and its selector
 
 The boot animation is drawn by the intro task, entry `0x4006c2ae`. It draws
-one pseudo-random number and picks between two whole animations:
-
-```
-0x4006c2f0  jsr    (a6)          ; a6 = 0x40105910, rand()
-0x4006c2f2  mvs.w  d0, d0
-0x4006c2f4  cmpi.l #$7fdf, d0    ; 32735
-0x4006c2fa  ble.w  0x4006c3d2    ; ~99.9% -> the usual animation
-            <falls through>      ; ~0.1%  -> the alternate animation
-```
+one pseudo-random number and picks between two whole animations. The selector
+compares the draw against a threshold (32735) at `0x4006c2f4`; for ~99.9% of
+draws it takes the branch at `0x4006c2fa` to the usual animation, and the
+remaining ~0.1% falls through to the alternate animation.
 
 The generator at `0x40105910` is the ANSI C reference LCG:
 
@@ -34,11 +29,9 @@ The usual path then splits once more on a factory-test flag into scene A
 `0x4006c2fe`. Both animations are generated in code (softfloat particle
 fields) — there is no stored image to swap.
 
-![usual vs rare](../screenshots/usual-vs-rare.png)
-
 The usual animation peaks around **367 lit pixels**, the rare one around
-**666**; `screenshots/usual-splash.gif` and `screenshots/rare-splash.gif` are
-emulator captures.
+**666** (measured in digiemu; captures of Elektron's own animation are not
+redistributed here).
 
 ## Presenting a frame
 
@@ -61,7 +54,7 @@ falls through to the alternate animation:
 
 | address | stock | new |
 |---|---|---|
-| `0x4006c2fa` | `6f 00 00 d6` (`ble.w`) | `4e 71 4e 71` (`nop; nop`) |
+| `0x4006c2fa` | (stock branch) | `4e 71 4e 71` (`nop; nop`) |
 
 No sources, so it builds without a toolchain.
 

@@ -19,11 +19,10 @@ The mods' own code and the tools here are **GPL-2.0-or-later** (see
 
 - `screenshots/digitussy.gif`, `digitrash.gif` show
   **this project's own graphics**, rendered by the firmware in the emulator.
-- `screenshots/usual-vs-rare.png`, `usual-splash.gif` and `rare-splash.gif`
-  are captures of the **device's own** boot animation (the one in stock OS
-  1.53). They are included for reference only, to document what `rare-splash`
-  changes; they are Elektron's artwork, not this project's, and are not
-  covered by the GPL above.
+- Captures of the **device's own** boot animation (the one in stock OS 1.53)
+  are **Elektron's artwork, not this project's**, and are **not redistributed**
+  in this repository. To see what `rare-splash` changes, run it on your own
+  hardware or in digiemu.
 
 ## Credit
 

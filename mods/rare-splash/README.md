@@ -3,8 +3,6 @@
 Boots on the **alternate** stock animation instead of the usual one. Needs
 `core`.
 
-![rare splash](../../screenshots/rare-splash.gif)
-
 ## How it works
 
 The intro picks between two animations from a generator that is never seeded,
@@ -13,7 +11,7 @@ the branch that guards it with two `nop`s:
 
 | address | stock | new |
 |---|---|---|
-| `0x4006c2fa` | `6f 00 00 d6` (`ble.w`) | `4e 71 4e 71` (`nop; nop`) |
+| `0x4006c2fa` | (stock branch) | `4e 71 4e 71` (`nop; nop`) |
 
 It has **no sources**, so it builds without a cross toolchain. See
 [../../docs/TECHNICAL.md](../../docs/TECHNICAL.md).

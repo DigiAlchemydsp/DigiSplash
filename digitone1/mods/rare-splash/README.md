@@ -10,7 +10,7 @@ guards it with two `nop`s:
 
 | address | stock | new |
 |---|---|---|
-| `0x40090e82` | `6f 00 01 a2` (`ble.w`) | `4e 71 4e 71` (`nop; nop`) |
+| `0x40090e82` | (stock branch) | `4e 71 4e 71` (`nop; nop`) |
 
 It has **no sources**, so it builds without a cross toolchain.
 
